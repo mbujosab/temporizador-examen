@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+    <script>
+        // Usage: See README.md or https://github.com/doersino/exam-timer/.
+        var duration = 2;  // in minutes
+
+        var remainingLabel = "m";
+        var remainingAboveContent = "";
+        var remainingBelowContent = "TIEMPO RESTANTE";
+        var startContent = "START";
+        var endContent = "END";
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            background-color: black;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            color: white;
+        }
+        body {
+            display: flex;
+        }
+        .infos {
+            flex: 0.6;
+            padding: 1.5rem;
+            height: 100vh;
+            overflow-y: scroll;
+            background-color: #333;
+        }
+        header {
+            margin-bottom: 0.666em;
+        }
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1em;
+        }
+        ul {
+            list-style: none;
+        }
+        li:before {
+            content: "–";
+            padding-right: 0.5em;
+        }
+        li {
+            padding-left: 1em;
+            text-indent: -1em;
+            line-height: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        .timer {
+            flex: 0.4;
+            height: 100vh;
+            padding: 1.5rem;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            font-family: Helvetica, Arial, sans-serif;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <section class="infos">
+        <span class="before">Bienvenidos al examen de</span>
+        <header>
+            <h1>Matemáticas II</h1>
+            <h2>(Grado en Economía)</h2>
+        </header>
+	<ul>
+	  <li class="before">Solo necesita: su identificación, un bolígrafo y, si lo desea, agua o refresco.</li>
+	  <li class="before during"><strong>Retire cualquier dispositivo electrónico</strong> (móviles, smartwatches, calculadoras, pinganillos, etc.). La mera posibilidad de acceso a ellos se considera un intento de copia. No lleve gafas oscuras. Sus pabellones auditivos deben ser visibles.</li>
+	  <li class="before during">Los intentos de copia son una falta grave cuyas consecuencias son: la calificación "cero" en actas y posibles sanciones académicas.</li>
+	  <li class="before during" ><strong>Lea detenidamente las instrucciones</strong> de la cabecera del examen.</li>
+	  <li class="before during homestretch"><strong>Ponga su nombre</strong> en cada hoja. Entrégelas juntas dentro de uno de los pliegos.</strong></li>
+	  <li class="before during homestretch"><strong>Indique el grupo</strong> en el que está matriculado.</strong></li>
+	  <li class="before">Les deseamos mucho éxito.</li>
+	  <li class="during">Si <strong>necesita más hojas</strong>, levante la mano. El personal encargado le proporcionará las necesarias de manera inmediata.</li>
+	  <li class="homestretch">Para no perturbar la concentración de los demás, se solicita a los estudiantes que eviten hacer ruido o retirarse de manera apresurada durante los últimos 15 minutos del examen.</li>
+	  <li class="after">El examen ha concluido.</li>
+	  <li class="after">Espere en su asiento a que el profesor recoja su examen.</li>
+	  <li class="after">Gracias por su participación.</li>
+	  <li class="after">Les deseamos un buen descanso y éxito en sus demás actividades académicas.</li>
+	</ul>
+    </section>
+    <section class="timer">
+        <svg id="timer">
+            <path id="spinner-background" fill="none" stroke="#555" />
+            <path id="spinner" fill="none" stroke="white" />
+            <text id="remaining" fill="white" text-anchor="middle" alignment-baseline="middle"></text>
+            <text id="remaining-above" fill="white" text-anchor="middle" alignment-baseline="middle"></text>
+            <text id="remaining-below" fill="white" text-anchor="middle" alignment-baseline="middle"></text>
+            <path id="start-end-circle" fill="none" stroke="none" />
+            <text id="start-end" fill="white" text-anchor="middle">
+                <textPath id="start-end-path" xlink:href="#start-end-circle"></textPath>
+            </text>
+        </svg>
+    </section>
+    <script>
+
+        // via https://stackoverflow.com/a/18473154
+        function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+            let angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
+
+            return {
+                x: centerX + (radius * Math.cos(angleInRadians)),
+                y: centerY + (radius * Math.sin(angleInRadians))
+            };
+        }
+
+        // via https://stackoverflow.com/a/18473154
+        function describeArc(x, y, radius, startAngle, endAngle) {
+            let start = polarToCartesian(x, y, radius, endAngle);
+            let end = polarToCartesian(x, y, radius, startAngle);
+
+            let largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+
+            let d = [
+                "M", start.x, start.y,
+                "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y
+            ].join(" ");
+
+            return d;
+        }
+
+        // via https://github.com/doersino/markdeep-slides/blob/master/markdeep-slides/markdeep-slides.js
+        function toggleFullscreen() {
+            var fullscreen = !!(window.fullScreen || document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+
+            if (fullscreen) {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            } else {
+                var root = document.documentElement;
+                if (root.requestFullscreen) {
+                    root.requestFullscreen();
+                } else if (root.mozRequestFullScreen) {
+                    root.mozRequestFullScreen();
+                } else if (root.webkitRequestFullscreen) {
+                    root.webkitRequestFullscreen();
+                } else if (root.msRequestFullscreen) {
+                    root.msRequestFullscreen();
+                }
+            }
+        }
+
+        var started = false;
+        var s;
+        var e;
+
+        var paused = false;
+        var p;
+        var pPrev = 0;
+        var pCurr = 0;
+        var pTotal = 0;
+        var eWithPauses;
+
+        // resume timer after a reload
+        if (window.location.hash) {
+            let loc = window.location.hash.substring(1);
+            let [rawS, rawPPrev] = loc.split("+");
+
+            s = new Date(parseInt(rawS) * 1000);
+            pPrev = parseInt(rawPPrev * 1000);
+            e = new Date(s.getTime() + duration*60000);
+
+            started = true;
+        }
+
+        // handle key presses
+        document.body.onkeyup = function(event) {
+
+            // space bar => start timer or pause/unpause
+            if (event.keyCode == 32) {
+                if (!started) {
+                    s = new Date();
+                    e = new Date(s.getTime() + duration*60000);
+
+                    started = true;
+                    window.location.hash = Math.round(s.getTime() / 1000) + "+" + pTotal;
+                } else {
+                    if (!paused) {
+                        p = new Date();
+                    } else {
+                        pPrev += pCurr;
+                        pCurr = 0;
+                    }
+                    paused = !paused;
+                }
+            }
+
+            // f key => toggle fullscreen
+            if (event.keyCode == 70) {
+                toggleFullscreen();
+            }
+        };
+
+        // hide cursor once it hasn't been moved for 2s
+        // based on https://stackoverflow.com/a/31798987
+        var cursorTimeout;
+        document.body.onmousemove = function() {
+            if (document.body.style.cursor != "none") {
+                if (cursorTimeout) {
+                    clearTimeout(cursorTimeout);
+                }
+            } else {
+                document.body.style.cursor = "auto";
+            }
+
+            cursorTimeout = setTimeout(function() {
+                document.body.style.cursor = "none";
+            }, 2000);
+        };
+
+        // run the following 10 times a second. yes, much of this could be run
+        // only once, but none of it is massively resource-intensive and keeping
+        // it this way automatically adjusts the size of everything in case the
+        // browser window is resized or the scaling factor is changed while the
+        // timer is started
+        setInterval(function() {
+            let w = document.getElementById("timer").clientWidth;
+            let h = document.getElementById("timer").clientHeight;
+            let size = Math.min(h, w);
+
+            // compute line thicknesses and font sizes
+            let spinnerArcThickness = size / 25;
+            let spinnerBackgroundArcThickness = size / 60;
+            let remainingFontSize = size / 5;
+            let remainingAboveFontSize = size / 15;
+            let remainingBelowFontSize = size / 15;
+            let startEndFontSize = size / 25;
+
+            // define spinner/arc position
+            let spinnerRadius = size / 2 - spinnerArcThickness / 2;
+            let spinnerX = w / 2;
+            let spinnerY = h / 2;
+
+            // define position of labels
+            let remainingY = spinnerY;
+            let remainingAboveY = remainingY - .7 * (remainingFontSize + remainingAboveFontSize);
+            let remainingBelowY = remainingY + .6 * (remainingFontSize + remainingBelowFontSize);
+            // weird: the spacing's off if this ^ is the same as the other one
+
+            // shift labels if only one is set
+            if (remainingAboveContent && !remainingBelowContent) {
+                remainingY += .25 * (remainingFontSize + remainingAboveFontSize);
+                remainingAboveY += .25 * (remainingFontSize + remainingAboveFontSize);
+            }
+            if (!remainingAboveContent && remainingBelowContent) {
+                remainingY -= .25 * (remainingFontSize + remainingAboveFontSize);
+                remainingBelowY -= .25 * (remainingFontSize + remainingAboveFontSize);
+            };
+
+            // compute radius of arc on which start and end times will be placed
+            let startEndCircleRadius = spinnerRadius - startEndFontSize;
+
+            // apply computed values
+            document.getElementById("spinner").setAttribute("stroke-width", spinnerArcThickness);
+            document.getElementById("spinner-background").setAttribute("stroke-width", spinnerBackgroundArcThickness);
+            document.getElementById("remaining").setAttribute("font-size", remainingFontSize);
+            document.getElementById("remaining").setAttribute("x", spinnerX);
+            document.getElementById("remaining").setAttribute("y", remainingY);
+            document.getElementById("remaining-above").setAttribute("font-size", remainingAboveFontSize);
+            document.getElementById("remaining-above").innerHTML = remainingAboveContent;
+            document.getElementById("remaining-above").setAttribute("x", spinnerX);
+            document.getElementById("remaining-above").setAttribute("y", remainingAboveY);
+            document.getElementById("remaining-below").setAttribute("font-size", remainingBelowFontSize);
+            document.getElementById("remaining-below").innerHTML = remainingBelowContent;
+            document.getElementById("remaining-below").setAttribute("x", spinnerX);
+            document.getElementById("remaining-below").setAttribute("y", remainingBelowY);
+            document.getElementById("start-end-circle").setAttribute("d", describeArc(spinnerX, spinnerY, startEndCircleRadius, 0, 359.999));
+            document.getElementById("start-end").setAttribute("font-size", startEndFontSize);
+            document.getElementById("start-end").setAttribute("x", Math.PI * startEndCircleRadius);
+
+            if (!started) {
+                document.getElementById("timer").style.opacity = 0.5;
+
+                // if timer not yet started: show total time
+                document.getElementById("spinner").setAttribute("d", describeArc(spinnerX, spinnerY, spinnerRadius, 0, 359.999));
+                document.getElementById("spinner-background").setAttribute("d", describeArc(spinnerX, spinnerY, spinnerRadius, 0, 359.999));
+                document.getElementById("remaining").innerHTML = duration + remainingLabel;
+
+            } else {
+
+                // handle pauses
+                if (paused) {
+                    pCurr = (new Date()).getTime() - p.getTime();
+                    history.replaceState({}, '', '#' + Math.round(s.getTime() / 1000) + "+" + Math.round(pTotal / 1000));
+                }
+                pTotal = pPrev + pCurr;
+                eWithPauses = new Date(e.getTime() + pTotal);
+
+                // if timer started: show start and end times and update timer
+                document.getElementById("start-end-path").innerHTML = startContent + ": " + s.toTimeString().substring(0,5) + " – " + endContent + ": " + eWithPauses.toTimeString().substring(0,5);
+
+                // tick, tock, tick, tock, ...
+                let remaining = Math.max(eWithPauses.getTime() - (new Date()).getTime(), 0);
+                let remainingDeg = remaining / (duration * 60 * 1000) * 360;
+
+                if (!paused && remaining > 0) {
+                    document.getElementById("timer").style.opacity = 1.0;
+                } else {
+                    document.getElementById("timer").style.opacity = 0.5;
+                }
+
+                document.getElementById("spinner").setAttribute("d", describeArc(spinnerX, spinnerY, spinnerRadius, 360 - remainingDeg, 360));
+                document.getElementById("spinner-background").setAttribute("d", describeArc(spinnerX, spinnerY, spinnerRadius, 0, 359.999));
+                document.getElementById("remaining").innerHTML = Math.ceil(remaining / (60 * 1000)) + remainingLabel;
+            }
+
+            // show and hide instructions depending on state
+            let state;
+            if (!started) {
+                state = "before";
+            } else {
+                var remaining = Math.max(eWithPauses.getTime() - (new Date()).getTime(), 0);
+                if (remaining > 1 * 60 * 1000) {
+                    state = "during";
+                } else if (remaining > 0) {
+                    state = "homestretch";
+                } else {
+                    state = "after";
+                }
+            }
+            let otherStates = ["before", "during", "homestretch", "after"];
+            otherStates.splice(otherStates.indexOf(state), 1);
+
+            // inactive states
+            for (o in otherStates) {
+                let elements = document.getElementsByClassName(otherStates[o]);
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].style.display = "none";
+                }
+            }
+
+            // active states
+            let elements = document.getElementsByClassName(state);
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = "block";
+            }
+        }, 100);
+    </script>
+</body>
+</html>

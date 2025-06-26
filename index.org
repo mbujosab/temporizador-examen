@@ -1,0 +1,57 @@
+#+title:  Temporizadores disponibles
+#+author: Marcos Bujosa 
+#+email:  mbujosab@ucm.es
+#+LANGUAGE: es
+#+options: num:nil
+
+# ###########
+# ESTO DA EL FORMATO FINAL DE LA PÁGINA WEB VÉASE [[https://olmon.gitlab.io/org-themes/]]
+#+SETUPFILE: css/simple_inlineUCM.theme  
+# +SETUPFILE: simple_inline.theme  
+# ###########
+
+#+attr_html: :width 320px
+# https://www.ucm.es/data/cont/docs/3-2016-07-21-Marca%20UCM%20logo%20negro.png
+
+*Repositorio en [[https://github.com/mbujosab/Temporizador-Examen]]*
+
+** Matemáticas II
+- [[file:./Mates2-120.html][Temporizador de 2 horas]]
+- [[file:./Mates2-105.html][Temporizador de 1 hora y tres cuartos]]
+- [[file:./Mates2-90.html][Temporizador de 1 hora y media]]
+- [[file:./Mates2-demo.html][*Demo de 2 minutos*]]
+
+*** Información mostrada en la pantalla
+
+Se mostrarán distintos textos informativos en cada fase del examen:
+
+**** Antes de comenzar
+- Solo necesita: su identificación, un bolígrafo y, si lo desea, agua o refresco.
+- Retire cualquier dispositivo electrónico (móviles, smartwatches, calculadoras, pinganillos, etc.). La mera posibilidad de acceso a ellos se considera un intento de copia. No lleve gafas oscuras. Sus pabellones auditivos deben ser visibles.
+- Los intentos de copia son una falta grave cuyas consecuencias son: la calificación "cero" en actas y posibles sanciones académicas.
+- Lea detenidamente las instrucciones de la cabecera del examen.
+- Ponga su nombre en cada hoja. Entrégelas juntas dentro de uno de los pliegos.
+- Indique el grupo en el que está matriculado.
+- Les deseamos mucho éxito.
+
+**** Durante el examen
+
+- Retire cualquier dispositivo electrónico (móviles, smartwatches, calculadoras, pinganillos, etc.). La mera posibilidad de acceso a ellos se considera un intento de copia. No lleve gafas oscuras. Sus pabellones auditivos deben ser visibles.
+- Los intentos de copia son una falta grave cuyas consecuencias son: la calificación "cero" en actas y posibles sanciones académicas.
+- Lea detenidamente las instrucciones de la cabecera del examen.
+- Ponga su nombre en cada hoja. Entrégelas juntas dentro de uno de los pliegos.
+- Indique el grupo en el que está matriculado.
+- Si necesita más hojas, levante la mano. El personal encargado le proporcionará las necesarias de manera inmediata.
+
+**** El último cuarto de hora
+
+- Ponga su nombre en cada hoja. Entrégelas juntas dentro de uno de los pliegos.
+- Indique el grupo en el que está matriculado.
+- Para no perturbar la concentración de los demás, se solicita a los estudiantes que eviten hacer ruido o retirarse de manera apresurada durante los últimos 15 minutos del examen.
+
+**** Una vez finalizado el examen
+
+- El examen ha concluido.
+- Espere en su asiento a que el profesor recoja su examen.
+- Gracias por su participación.
+- Les deseamos un buen descanso y éxito en sus demás actividades académicas.

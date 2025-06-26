@@ -1,0 +1,55 @@
+#+TITLE: Temporizador para el examen de Matemáticas II
+#+SUBTITLE: Un cronómetro personalizado para exámenes escritos
+
+* Descripción
+
+Un temporizador para ser mostrado en la pantalla del aula durante exámenes escritos.
+
+Puede consultar la [[https://mbujosab.github.io/Temporizador-Examen/Mates2-demo.html][demostración en línea]] (presione =espacio= para iniciar el temporizador) o continúe leyendo para obtener más información sobre este recurso.
+
+Disponde de algunos temporizadores [[https://mbujosab.github.io/Temporizador-Examen/][aquí]].
+
+[[file:photo.jpg]]
+
+* ¿Por qué utilizar esta herramienta?
+
+- Las aulas de la facultad no disponen de un reloj visible.
+- Un leve zumbido del proyector es *menos distractor para los estudiantes* que indicar de viva voz cuanto tiempo resta de examen.
+- Tener la información información logística relevante siempre visible *reduce la cantidad de preguntas* durante el examen.
+- Los exámenes de cursos masivos suelen realizarse en múltiples sedes al mismo tiempo. Esta herramienta permite *comunicar directrices de manera uniforme* en todas ellas.
+- Esta herramienta es *fácil de configurar*, *no tiene dependencias* y *se ejecuta directamente en el navegador*.
+
+* Instrucciones de uso
+
+1. Revise el código fuente del archivo =examtimer.html=.
+   - Configure la *duración del examen* en la línea 8. Si es necesario, puede modificar las etiquetas del temporizador en las líneas siguientes.
+   - Alrededor de la línea 75, dentro de la sección =<section class="infos">=, sustituya los datos de ejemplo por la *información* relevante para su examen. Para *controlar en qué fase del examen se muestra un elemento*, utilice las siguientes clases:
+
+     #+begin_example
+     <li class="before">Visible antes de que comience el examen.</li>
+     <li class="during">Visible durante la primera parte del examen.</li>
+     <li class="homestretch">Visible durante los últimos 15 minutos.</li>
+     <li class="after">Visible una vez finalizado el examen.</li>
+     #+end_example
+
+     Estas clases pueden combinarse libremente:
+
+     #+begin_example
+     <li class="before during homestretch">Visible hasta que finalice el examen.</li>
+     #+end_example
+
+     Los elementos sin ninguna de estas clases estarán visibles en todo momento.
+
+2. Antes de que lleguen los estudiantes, *abra =examtimer.html= en su navegador*.
+   - Desactive el modo de suspensión de su equipo (o ajústelo a un tiempo suficientemente largo). Si existe una configuración independiente para suspensión de pantalla o salvapantallas, desactívela también.
+   - Si utiliza software que pueda mostrar notificaciones o ventanas emergentes (especialmente Java), es recomendable cerrarlo durante el examen.
+   - Presione =f= para activar el modo de pantalla completa.
+   - Si es necesario, ajuste el tamaño del texto utilizando las herramientas del navegador (usualmente =Ctrl/⌘ + +/-=).
+
+3. Una vez todo esté preparado, *presione la barra espaciadora* para iniciar el cronómetro.
+   - Puede *pausar o reanudar el cronómetro* presionando nuevamente la barra espaciadora.
+   - Se añadirá una marca temporal (Unix timestamp) a la URL, correspondiente al momento de inicio más el tiempo total de pausa. De esta forma, si el equipo se reinicia inesperadamente, podrá *reanudar el temporizador desde el historial del navegador*.
+
+* Notas
+
+- El código original de este temporizador procede del repositorio [[https://github.com/doersino/exam-timer][exam-timer]].
