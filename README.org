@@ -5,9 +5,9 @@
 
 Un temporizador para ser mostrado en la pantalla del aula durante exámenes escritos.
 
-Puede consultar la [[https://mbujosab.github.io/Temporizador-Examen/Mates2-demo.html][demostración en línea]] (presione =espacio= para iniciar el temporizador) o continúe leyendo para obtener más información sobre este recurso.
+Puede consultar la [[https://mbujosab.github.io/temporizador-examen/Mates2-demo.html][demostración en línea]] (presione =espacio= para iniciar el temporizador) o continúe leyendo para obtener más información sobre este recurso.
 
-Disponde de algunos temporizadores [[https://mbujosab.github.io/Temporizador-Examen/][aquí]].
+Disponde de algunos temporizadores [[https://mbujosab.github.io/temporizador-examen/][aquí]].
 
 [[file:photo.jpg]]
 
