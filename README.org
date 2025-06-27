@@ -1,5 +1,5 @@
-#+TITLE: Temporizador para el examen de Matemáticas II
-#+SUBTITLE: Un cronómetro personalizado para exámenes escritos
+#+TITLE: Temporizador para exámenes
+#+SUBTITLE: Un cronómetro diseñado para ser proyectado durante la celebración de exámenes escritos
 
 * Descripción
 
@@ -21,7 +21,7 @@ Disponde de algunos temporizadores [[https://mbujosab.github.io/temporizador-exa
 
 * Instrucciones de uso
 
-1. Revise el código fuente del archivo =examtimer.html=.
+1. Revise el código fuente del archivo =examtimer.org=.
    - Configure la *duración del examen* en la línea 8. Si es necesario, puede modificar las etiquetas del temporizador en las líneas siguientes.
    - Alrededor de la línea 75, dentro de la sección =<section class="infos">=, sustituya los datos de ejemplo por la *información* relevante para su examen. Para *controlar en qué fase del examen se muestra un elemento*, utilice las siguientes clases:
 
@@ -40,7 +40,7 @@ Disponde de algunos temporizadores [[https://mbujosab.github.io/temporizador-exa
 
      Los elementos sin ninguna de estas clases estarán visibles en todo momento.
 
-2. Antes de que lleguen los estudiantes, *abra =examtimer.html= en su navegador*.
+2. Antes de que lleguen los estudiantes, *abra =sutemporizador.html= en un navegador*.
    - Desactive el modo de suspensión de su equipo (o ajústelo a un tiempo suficientemente largo). Si existe una configuración independiente para suspensión de pantalla o salvapantallas, desactívela también.
    - Si utiliza software que pueda mostrar notificaciones o ventanas emergentes (especialmente Java), es recomendable cerrarlo durante el examen.
    - Presione =f= para activar el modo de pantalla completa.
