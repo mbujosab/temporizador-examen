@@ -243,7 +243,7 @@
 #+END_SRC
 
 
-El =15= de la línea =if (remaining > 15 * 60 * 1000) {= indica cuantos son los minutos finales del examen en los que se muestra un texto de cómo salir del examen si aún no ha terminado.
+El =15= de la línea =if (remaining > 15 * 60 * 1000) {= indica cuántos son los minutos finales del examen en los que se muestra un texto de salida del examen si aún no ha finalizado el tiempo fijado para el examen.
 #+name: script funcionamiento
 #+BEGIN_SRC html
 <script>
@@ -502,7 +502,7 @@ El =15= de la línea =if (remaining > 15 * 60 * 1000) {= indica cuantos son los 
 
 * Versión DEMO de temporizador
 
-Temporizador con las instrucciones para Matemáticas II, con una duración de 2 minutos. Durante el último minuto se muestran las instrucciones de los últimos minutos antes de finalizar el examen.
+Temporizador con las instrucciones para Matemáticas II, con una duración de 2 minutos. Durante el último minuto se muestran las instrucciones de salida de los últimos minutos antes de finalizar el examen.
 #+BEGIN_SRC html :tangle Mates2-demo.html :noweb yes
 <!DOCTYPE html>
 <html>
