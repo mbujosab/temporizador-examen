@@ -7,21 +7,21 @@ Un temporizador para ser mostrado en la pantalla del aula durante exámenes escr
 
 Puede consultar la [[https://mbujosab.github.io/temporizador-examen/Mates2-demo.html][demostración en línea]] (presione =espacio= para iniciar el temporizador) o continúe leyendo para obtener más información sobre este recurso.
 
-Disponde de algunos temporizadores [[https://mbujosab.github.io/temporizador-examen/][aquí]].
+Dispone de algunos temporizadores [[https://mbujosab.github.io/temporizador-examen/][aquí]].
 
 [[file:photo.jpg]]
 
 * ¿Por qué utilizar esta herramienta?
 
 - Las aulas de la facultad no disponen de un reloj visible.
-- Un leve zumbido del proyector es *menos distractor para los estudiantes* que indicar de viva voz cuanto tiempo resta de examen.
-- Tener la información información logística relevante siempre visible *reduce la cantidad de preguntas* durante el examen.
+- Un leve zumbido del proyector es *menos distractor para los estudiantes* que indicar de viva voz cuánto tiempo resta del examen.
+- Tener la información logística relevante siempre visible *reduce la cantidad de preguntas* durante el examen.
 - Los exámenes de cursos masivos suelen realizarse en múltiples sedes al mismo tiempo. Esta herramienta permite *comunicar directrices de manera uniforme* en todas ellas.
 - Esta herramienta es *fácil de configurar*, *no tiene dependencias* y *se ejecuta directamente en el navegador*.
 
 * Instrucciones de uso
 
-1. Revise el código fuente en el archivo [[file:./examtimer.org][=examtimer.org=]].
+1. Revise el código fuente en el archivo [[file:./examtimer.org][=examtimer.org=]] o directametne el temporizador de demostración [[file:Mates2-demo.html][Mates2-demo.html]].
    - Configure la *duración del examen* en la línea 8. Si es necesario, puede modificar las etiquetas del temporizador en las líneas siguientes.
    - Alrededor de la línea 75, dentro de la sección =<section class="infos">=, sustituya los datos de ejemplo por la *información* relevante para su examen. Para *controlar en qué fase del examen se muestra un elemento*, utilice las siguientes clases:
 
@@ -41,7 +41,7 @@ Disponde de algunos temporizadores [[https://mbujosab.github.io/temporizador-exa
      Los elementos sin ninguna de estas clases estarán visibles en todo momento.
 
 2. Antes de que lleguen los estudiantes, *abra =SuTemporizador.html= en un navegador*.
-   - Desactive el modo de suspensión de su equipo (o ajústelo a un tiempo suficientemente largo). Si existe una configuración independiente para suspensión de pantalla o salvapantallas, desactívela también.
+   - Desactive el modo de suspensión de su equipo (o ajústelo a un tiempo suficientemente largo). Si existe una configuración independiente para la suspensión de pantalla o el salvapantallas, desactívela también.
    - Si utiliza software que pueda mostrar notificaciones o ventanas emergentes (especialmente Java), es recomendable cerrarlo durante el examen.
    - Presione =f= para activar el modo de pantalla completa.
    - Si es necesario, ajuste el tamaño del texto utilizando las herramientas del navegador (usualmente =Ctrl/⌘ + +/-=).

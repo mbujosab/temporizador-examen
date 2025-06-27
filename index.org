@@ -7,13 +7,12 @@
 # ###########
 # ESTO DA EL FORMATO FINAL DE LA PÁGINA WEB VÉASE [[https://olmon.gitlab.io/org-themes/]]
 #+SETUPFILE: css/simple_inlineUCM.theme  
-# +SETUPFILE: simple_inline.theme  
 # ###########
 
 #+attr_html: :width 320px
 # https://www.ucm.es/data/cont/docs/3-2016-07-21-Marca%20UCM%20logo%20negro.png
 
-*Repositorio en [[https://github.com/mbujosab/Temporizador-Examen]]*
+*Repositorio en [[https://github.com/mbujosab/temporizador-examen]]*
 
 ** Matemáticas II
 - [[file:./Mates2-120.html][Temporizador de 2 horas]]
@@ -32,7 +31,7 @@ Se mostrarán distintos textos informativos en cada fase del examen:
 - Lea detenidamente las instrucciones de la cabecera del examen.
 - Ponga su nombre en cada hoja. Entrégelas juntas dentro de uno de los pliegos.
 - Indique el grupo en el que está matriculado.
-- Les deseamos mucho éxito.
+- Le deseamos mucho éxito.
 
 **** Durante el examen
 
@@ -54,4 +53,4 @@ Se mostrarán distintos textos informativos en cada fase del examen:
 - El examen ha concluido.
 - Espere en su asiento a que el profesor recoja su examen.
 - Gracias por su participación.
-- Les deseamos un buen descanso y éxito en sus demás actividades académicas.
+- Le deseamos un buen descanso y éxito en sus demás actividades académicas.
