@@ -111,7 +111,7 @@
     <meta charset="utf-8">
     <title>Exam timer</title>
 
-    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>> // 
+    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
       
     <<definición de estilo>>
   </head>
@@ -134,7 +134,7 @@
     <meta charset="utf-8">
     <title>Exam timer</title>
 
-    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>> // 
+    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
       
     <<definición de estilo>>
   </head>
@@ -164,6 +164,78 @@
   <body>
     
     <<INFORMACIÓN MATEMÁTICAS II>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+
+** Econometría aplicada
+
+*** Econometría aplicada de 1 hora y media
+
+#+BEGIN_SRC html :tangle EctrAp-90.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+
+    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+*** Econometría aplicada de 1 hora y tres cuartos
+
+#+BEGIN_SRC html  :tangle EctrAp-105.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+
+    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+*** Econometría aplicada de 2 horas
+
+#+BEGIN_SRC html  :tangle EctrAp-120.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+
+    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
 
     <<sección temporizador>>
     <<script funcionamiento>>
@@ -210,7 +282,7 @@
 #+name: INFORMACIÓN MATEMÁTICAS II
 #+BEGIN_SRC html
   <section class="infos">
-      <span class="before">Bienvenido al examen de</span>
+      <span class="before">Examen de</span>
       <header>
           <h1>Matemáticas II</h1>
           <h2>(Grado en Economía)</h2>
@@ -218,6 +290,36 @@
       <ul>
         <li class="before during">Ponga su <strong>documento de identificación</strong> sobre la mesa.</li>
         <li class="before during"><strong>Retire cualquier dispositivo electrónico</strong> (móviles, smartwatches, calculadoras, etc.).  La posibilidad de acceso a alguno se considerará un intento de copia. No use gafas oscuras y mantenga los oídos visibles.</li>
+        <li class="before during">Los intentos de copia son faltas graves: suponen un "cero" en actas y posibles sanciones académicas.</li>
+        <li class="before during" ><strong>Lea las instrucciones</strong> del examen detenidamente.</li>
+        <li class="before during homestretch"><strong>Ponga su nombre</strong> en cada hoja.</strong></li>
+        <li class="before during homestretch"><strong>Indique el grupo</strong> en el que está matriculado.</strong></li>
+        <li class="before during homestretch">Al finalizar, entrege todas las hojas juntas (dentro de uno de los pliegos).</strong></li>
+        <li class="before">Les deseamos mucho éxito.</li>
+        <li class="during">Si <strong>necesita más hojas</strong>, levante la mano. El personal encargado le proporcionará las que necesite.</li>
+        <li class="homestretch">Si desea entregar el examen y abandonar el aula, hágalo discretamente para no distraer a sus compañeros.</li>
+        <li class="after">El examen ha concluido.</li>
+        <li class="after">Espere en su asiento a que el profesor recoja su examen. Entréguelo en cuanto se lo pidan. No demore la recogida.</li>
+        <li class="after">Gracias por su participación.</li>
+        <li class="after">Le deseamos un buen descanso y éxito en sus demás actividades académicas.</li>
+      </ul>
+  </section>
+#+END_SRC
+
+
+
+*** Econometría aplicada
+
+#+name: INFORMACIÓN ECONOMETRÍA APLICADA
+#+BEGIN_SRC html
+  <section class="infos">
+      <span class="before">Examen de</span>
+      <header>
+          <h1>Econometría Aplicada</h1>
+      </header>
+      <ul>
+        <li class="before during">Ponga su <strong>documento de identificación</strong> sobre la mesa.</li>
+        <li class="before during"><strong>Retire cualquier dispositivo electrónico</strong> (móviles, smartwatches, calculadoras, etc.). La posibilidad de acceso a alguno se considerará un intento de copia. No use gafas oscuras y mantenga los oídos visibles.</li>
         <li class="before during">Los intentos de copia son faltas graves: suponen un "cero" en actas y posibles sanciones académicas.</li>
         <li class="before during" ><strong>Lea las instrucciones</strong> del examen detenidamente.</li>
         <li class="before during homestretch"><strong>Ponga su nombre</strong> en cada hoja.</strong></li>
