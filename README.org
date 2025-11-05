@@ -5,7 +5,7 @@
 
 Un temporizador para ser mostrado en la pantalla del aula durante exámenes escritos.
 
-Puede consultar la [[https://mbujosab.github.io/temporizador-examen/Mates2-demo.html][demostración en línea]] (presione =espacio= para iniciar el temporizador) o continúe leyendo para obtener más información sobre este recurso.
+Puede consultar la [[https://mbujosab.github.io/temporizador-examen/Temporizador-demo.html][demostración en línea]] (presione =espacio= para iniciar el temporizador) o continúe leyendo para obtener más información sobre este recurso.
 
 Dispone de algunos temporizadores [[https://mbujosab.github.io/temporizador-examen/][aquí]].
 
@@ -21,7 +21,7 @@ Dispone de algunos temporizadores [[https://mbujosab.github.io/temporizador-exam
 
 * Instrucciones de uso
 
-1. Revise el código fuente en el archivo [[file:./examtimer.org][=examtimer.org=]] o directametne el temporizador de demostración [[file:Mates2-demo.html][Mates2-demo.html]].
+1. Revise el código fuente en el archivo [[file:./examtimer.org][=examtimer.org=]] o directametne el temporizador de demostración [[file:Temporizador-demo.html][Mates2-demo.html]].
    - Configure la *duración del examen* en la línea 8. Si es necesario, puede modificar las etiquetas del temporizador en las líneas siguientes.
    - Alrededor de la línea 75, dentro de la sección =<section class="infos">=, sustituya los datos de ejemplo por la *información* relevante para su examen. Para *controlar en qué fase del examen se muestra un elemento*, utilice las siguientes clases:
 
