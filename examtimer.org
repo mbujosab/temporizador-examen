@@ -1,8 +1,108 @@
 #+TITLE: Código fuente de los ficheros =html=
 
+* Genérico
+
+** 1 hora
+
+#+BEGIN_SRC html :tangle Temporizador-60.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 60 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+
+
+** 1 hora y media
+
+#+BEGIN_SRC html :tangle Temporizador-90.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+** 1 hora y tres cuartos
+
+#+BEGIN_SRC html :tangle Temporizador-105.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+** 2 horas
+
+#+BEGIN_SRC html :tangle Temporizador-120.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+
 * Asignaturas
 
-** Matemáticas II de 1 hora y media
+** Matemáticas II
+
+*** Matemáticas II de 1 hora y media
 
 #+BEGIN_SRC html :tangle Mates2-90.html :noweb yes
 <!DOCTYPE html>
@@ -25,7 +125,7 @@
 </html>    
 #+END_SRC
 
-** Matemáticas II de 1 hora y tres cuartos
+*** Matemáticas II de 1 hora y tres cuartos
 
 #+BEGIN_SRC html  :tangle Mates2-105.html :noweb yes
 <!DOCTYPE html>
@@ -48,7 +148,7 @@
 </html>    
 #+END_SRC
 
-** Matemáticas II de 2 horas
+*** Matemáticas II de 2 horas
 
 #+BEGIN_SRC html  :tangle Mates2-120.html :noweb yes
 <!DOCTYPE html>
@@ -57,7 +157,7 @@
     <meta charset="utf-8">
     <title>Exam timer</title>
 
-    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>> // 
+    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
       
     <<definición de estilo>>
   </head>
@@ -76,89 +176,143 @@
 
 ** Instrucciones específicas de cada asignatura
 
+*** General
+
+#+name: INFORMACIÓN GENERAL
+#+BEGIN_SRC html
+  <section class="infos">
+      <span class="before">Bienvenido a este examen</span>
+      <header>
+          <h1>Instrucciones importantes</h1>
+      </header>
+      <ul>
+        <li class="before during">Ponga su <strong>documento de identificación</strong> sobre la mesa.</li>
+        <li class="before during"><strong>Retire cualquier dispositivo electrónico</strong> (móviles, smartwatches, etc.). La posibilidad de acceso a alguno se considerará un intento de copia. No use gafas oscuras y mantenga los oídos visibles.</li>
+        <li class="before during">Los intentos de copia son faltas graves: suponen un "cero" en actas y posibles sanciones académicas.</li>
+        <li class="before during" ><strong>Lea las instrucciones</strong> del examen detenidamente.</li>
+        <li class="before during homestretch"><strong>Ponga su nombre</strong> en cada hoja.</strong></li>
+        <li class="before during homestretch"><strong>Indique el grupo</strong> en el que está matriculado.</strong></li>
+        <li class="during homestretch">Al finalizar, entrege todas las hojas juntas.</strong></li>
+        <li class="before">Le deseamos mucho éxito.</li>
+        <li class="during">Si <strong>necesita más papel</strong>, levante la mano y el personal encargado le atenderá.</li>
+        <li class="homestretch">Si desea entregar el examen y abandonar el aula, hágalo discretamente para no distraer a sus compañeros.</li>
+        <li class="after">El examen ha concluido.</li>
+<li class="after">Espere en su asiento a que el profesor recoja su examen. Entréguelo en cuanto se lo pidan. No demore la recogida.</li>
+        <li class="after">Gracias por su participación.</li>
+        <li class="after">Le deseamos un buen descanso y éxito en sus demás actividades académicas.</li>
+      </ul>
+  </section>
+#+END_SRC
+
+
 *** Matemáticas
 
 #+name: INFORMACIÓN MATEMÁTICAS II
 #+BEGIN_SRC html
-<section class="infos">
-    <span class="before">Bienvenido al examen de</span>
-    <header>
-        <h1>Matemáticas II</h1>
-        <h2>(Grado en Economía)</h2>
-    </header>
-    <ul>
-      <li class="before">Solo necesita: su identificación, un bolígrafo y, si lo desea, agua o refresco.</li>
-      <li class="before during"><strong>Retire cualquier dispositivo electrónico</strong> (móviles, smartwatches, calculadoras, pinganillos, etc.). La mera posibilidad de acceso a ellos se considera un intento de copia. No lleve gafas oscuras. Sus pabellones auditivos deben ser visibles.</li>
-      <li class="before during">Los intentos de copia son una falta grave cuyas consecuencias son: la calificación "cero" en actas y posibles sanciones académicas.</li>
-      <li class="before during" ><strong>Lea detenidamente las instrucciones</strong> de la cabecera del examen.</li>
-      <li class="before during homestretch"><strong>Ponga su nombre</strong> en cada hoja. Entrégelas juntas dentro de uno de los pliegos.</strong></li>
-      <li class="before during homestretch"><strong>Indique el grupo</strong> en el que está matriculado.</strong></li>
-      <li class="before">Les deseamos mucho éxito.</li>
-      <li class="during">Si <strong>necesita más hojas</strong>, levante la mano. El personal encargado le proporcionará las necesarias de manera inmediata.</li>
-      <li class="homestretch">Para no perturbar la concentración de los demás, se solicita a los estudiantes que eviten hacer ruido o retirarse de manera apresurada durante los últimos 15 minutos del examen.</li>
-      <li class="after">El examen ha concluido.</li>
-      <li class="after">Espere en su asiento a que el profesor recoja su examen.</li>
-      <li class="after">Gracias por su participación.</li>
-      <li class="after">Le deseamos un buen descanso y éxito en sus demás actividades académicas.</li>
-    </ul>
-</section>
+  <section class="infos">
+      <span class="before">Bienvenido al examen de</span>
+      <header>
+          <h1>Matemáticas II</h1>
+          <h2>(Grado en Economía)</h2>
+      </header>
+      <ul>
+        <li class="before during">Ponga su <strong>documento de identificación</strong> sobre la mesa.</li>
+        <li class="before during"><strong>Retire cualquier dispositivo electrónico</strong> (móviles, smartwatches, calculadoras, etc.).  La posibilidad de acceso a alguno se considerará un intento de copia. No use gafas oscuras y mantenga los oídos visibles.</li>
+        <li class="before during">Los intentos de copia son faltas graves: suponen un "cero" en actas y posibles sanciones académicas.</li>
+        <li class="before during" ><strong>Lea las instrucciones</strong> del examen detenidamente.</li>
+        <li class="before during homestretch"><strong>Ponga su nombre</strong> en cada hoja.</strong></li>
+        <li class="before during homestretch"><strong>Indique el grupo</strong> en el que está matriculado.</strong></li>
+        <li class="before during homestretch">Al finalizar, entrege todas las hojas juntas (dentro de uno de los pliegos).</strong></li>
+        <li class="before">Les deseamos mucho éxito.</li>
+        <li class="during">Si <strong>necesita más hojas</strong>, levante la mano. El personal encargado le proporcionará las que necesite.</li>
+        <li class="homestretch">Si desea entregar el examen y abandonar el aula, hágalo discretamente para no distraer a sus compañeros.</li>
+        <li class="after">El examen ha concluido.</li>
+        <li class="after">Espere en su asiento a que el profesor recoja su examen. Entréguelo en cuanto se lo pidan. No demore la recogida.</li>
+        <li class="after">Gracias por su participación.</li>
+        <li class="after">Le deseamos un buen descanso y éxito en sus demás actividades académicas.</li>
+      </ul>
+  </section>
 #+END_SRC
+
+
 
 ** Duración de examen
 
-#+name: DURACIÓN 60 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html
-<script>
-    // Usage: See README.md or https://github.com/doersino/exam-timer/.
-    var duration = 60;  // in minutes
 
-    var remainingLabel = "m";
-    var remainingAboveContent = "";
-    var remainingBelowContent = "TIEMPO RESTANTE";
-    var startContent = "START";
-    var endContent = "END";
+#+name: DURACIÓN 20 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 20;
+    <<TEXTO DE LA ESFERA>>
 </script>
 #+END_SRC
 
-#+name: DURACIÓN 90 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html
-<script>
-    // Usage: See README.md or https://github.com/doersino/exam-timer/.
-    var duration = 90;  // in minutes
 
-    var remainingLabel = "m";
-    var remainingAboveContent = "";
-    var remainingBelowContent = "TIEMPO RESTANTE";
-    var startContent = "START";
-    var endContent = "END";
+#+name: DURACIÓN 30 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 30;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 45 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 45;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 60 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 60;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 90 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 90;
+    <<TEXTO DE LA ESFERA>>
 </script>
 #+END_SRC
 
 #+name: DURACIÓN 105 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html
+#+BEGIN_SRC html :noweb yes
 <script>
-    // Usage: See README.md or https://github.com/doersino/exam-timer/.
-    var duration = 105;  // in minutes
-
-    var remainingLabel = "m";
-    var remainingAboveContent = "";
-    var remainingBelowContent = "TIEMPO RESTANTE";
-    var startContent = "START";
-    var endContent = "END";
+    var duration = 105;
+    <<TEXTO DE LA ESFERA>>
 </script>
 #+END_SRC
 
 #+name: DURACIÓN 120 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html
+#+BEGIN_SRC html :noweb yes
 <script>
-    // Usage: See README.md or https://github.com/doersino/exam-timer/.
-    var duration = 120;  // in minutes
+    var duration = 120;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
 
-    var remainingLabel = "m";
-    var remainingAboveContent = "";
-    var remainingBelowContent = "TIEMPO RESTANTE";
-    var startContent = "START";
-    var endContent = "END";
+#+name: TEXTO DE LA ESFERA
+#+BEGIN_SRC html
+var remainingLabel = "m";
+var remainingAboveContent = "";
+var remainingBelowContent = "TIEMPO RESTANTE";
+var startContent = "START";
+var endContent = "END";
+#+END_SRC
+
+#+name: DURACIÓN 2 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 2;
+    <<TEXTO DE LA ESFERA>>
 </script>
 #+END_SRC
 
@@ -500,119 +654,27 @@ El =15= de la línea =if (remaining > 15 * 60 * 1000) {= indica cuántos son los
 #+END_SRC
 
 
-* Versión DEMO de temporizador
+* Versión DEMO del temporizador genérico
 
-Temporizador con las instrucciones para Matemáticas II, con una duración de 2 minutos. Durante el último minuto se muestran las instrucciones de salida de los últimos minutos antes de finalizar el examen.
-#+BEGIN_SRC html :tangle Mates2-demo.html :noweb yes
+Temporizador con una duración de 2 minutos. Durante el último minuto se muestran las instrucciones correspondientes a los últimos momentos antes de finalizar el examen (es lo que se ve en los últimos 15 minutos de los demás exámenes).
+
+#+BEGIN_SRC html :tangle Temporizador-demo.html :noweb yes
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Exam timer</title>
-    <script>
-        // Usage: See README.md or https://github.com/doersino/exam-timer/.
-        var duration = 2;  // in minutes
+    <title>Temporizador</title>
 
-        var remainingLabel = "m";
-        var remainingAboveContent = "";
-        var remainingBelowContent = "TIEMPO RESTANTE";
-        var startContent = "START";
-        var endContent = "END";
-    </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            background-color: black;
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 28px;
-            color: white;
-        }
-        body {
-            display: flex;
-        }
-        .infos {
-            flex: 0.6;
-            padding: 1.5rem;
-            height: 100vh;
-            overflow-y: scroll;
-            background-color: #333;
-        }
-        header {
-            margin-bottom: 0.666em;
-        }
-        h1 {
-            font-size: 1.5em;
-        }
-        h2 {
-            font-size: 1em;
-        }
-        ul {
-            list-style: none;
-        }
-        li:before {
-            content: "–";
-            padding-right: 0.5em;
-        }
-        li {
-            padding-left: 1em;
-            text-indent: -1em;
-            line-height: 1.5em;
-            margin-bottom: 0.5em;
-        }
-        .timer {
-            flex: 0.4;
-            height: 100vh;
-            padding: 1.5rem;
-        }
-        svg {
-            width: 100%;
-            height: 100%;
-            font-family: Helvetica, Arial, sans-serif;
-            letter-spacing: 1px;
-        }
-    </style>
-</head>
-<body>
-    <section class="infos">
-        <span class="before">Bienvenido al examen de</span>
-        <header>
-            <h1>Matemáticas II</h1>
-            <h2>(Grado en Economía)</h2>
-        </header>
-	<ul>
-	  <li class="before">Solo necesita: su identificación, un bolígrafo y, si lo desea, agua o refresco.</li>
-	  <li class="before during"><strong>Retire cualquier dispositivo electrónico</strong> (móviles, smartwatches, calculadoras, pinganillos, etc.). La mera posibilidad de acceso a ellos se considera un intento de copia. No lleve gafas oscuras. Sus pabellones auditivos deben ser visibles.</li>
-	  <li class="before during">Los intentos de copia son una falta grave cuyas consecuencias son: la calificación "cero" en actas y posibles sanciones académicas.</li>
-	  <li class="before during" ><strong>Lea detenidamente las instrucciones</strong> de la cabecera del examen.</li>
-	  <li class="before during homestretch"><strong>Ponga su nombre</strong> en cada hoja. Entrégelas juntas dentro de uno de los pliegos.</strong></li>
-	  <li class="before during homestretch"><strong>Indique el grupo</strong> en el que está matriculado.</strong></li>
-	  <li class="before">Les deseamos mucho éxito.</li>
-	  <li class="during">Si <strong>necesita más hojas</strong>, levante la mano. El personal encargado le proporcionará las necesarias de manera inmediata.</li>
-	  <li class="homestretch">Para no perturbar la concentración de los demás, se solicita a los estudiantes que eviten hacer ruido o retirarse de manera apresurada durante los últimos 15 minutos del examen.</li>
-	  <li class="after">El examen ha concluido.</li>
-	  <li class="after">Espere en su asiento a que el profesor recoja su examen.</li>
-	  <li class="after">Gracias por su participación.</li>
-	  <li class="after">Le deseamos un buen descanso y éxito en sus demás actividades académicas.</li>
-	</ul>
-    </section>
-    <section class="timer">
-        <svg id="timer">
-            <path id="spinner-background" fill="none" stroke="#555" />
-            <path id="spinner" fill="none" stroke="white" />
-            <text id="remaining" fill="white" text-anchor="middle" alignment-baseline="middle"></text>
-            <text id="remaining-above" fill="white" text-anchor="middle" alignment-baseline="middle"></text>
-            <text id="remaining-below" fill="white" text-anchor="middle" alignment-baseline="middle"></text>
-            <path id="start-end-circle" fill="none" stroke="none" />
-            <text id="start-end" fill="white" text-anchor="middle">
-                <textPath id="start-end-path" xlink:href="#start-end-circle"></textPath>
-            </text>
-        </svg>
-    </section>
-    <script>
+    <<DURACIÓN 2 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+        <script>
 
         // via https://stackoverflow.com/a/18473154
         function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
@@ -863,8 +925,8 @@ Temporizador con las instrucciones para Matemáticas II, con una duración de 2 
             }
         }, 100);
     </script>
-</body>
-</html>
+  </body>
+</html>    
 #+END_SRC
 
 

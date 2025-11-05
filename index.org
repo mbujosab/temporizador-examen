@@ -6,51 +6,102 @@
 
 # ###########
 # ESTO DA EL FORMATO FINAL DE LA PÁGINA WEB VÉASE [[https://olmon.gitlab.io/org-themes/]]
-#+SETUPFILE: css/simple_inlineUCM.theme  
+# +SETUPFILE: css/simple_inlineUCM.theme  
+#+SETUPFILE: ./css/bigblow_inline.theme
 # ###########
 
 #+attr_html: :width 320px
 # https://www.ucm.es/data/cont/docs/3-2016-07-21-Marca%20UCM%20logo%20negro.png
 
-*Repositorio en [[https://github.com/mbujosab/temporizador-examen]]*
+- *El temporizador comenzará a funcionar al pulsar la barra espaciadora.* Si se pulsa una segunda vez, el temporizador se pausará.
 
-** Matemáticas II
-- [[file:./Mates2-120.html][Temporizador de 2 horas]]
-- [[file:./Mates2-105.html][Temporizador de 1 hora y tres cuartos]]
-- [[file:./Mates2-90.html][Temporizador de 1 hora y media]]
-- [[file:./Mates2-demo.html][*Demo de 2 minutos*]]
+- Si el tiempo restante mostrado en la esfera aparece en gris, significa que el temporizador está en pausa.
+
+/Temporizador de demostración de 2 minutos [[file:./Temporizador-demo.html][aquí]]./
+
+Código fuente en [[https://github.com/mbujosab/temporizador-examen]]
+
+** Temporizador genérico
+- [[file:./Temporizador-120.html][Temporizador de 2 horas]]
+- [[file:./Temporizador-105.html][Temporizador de 1 hora y tres cuartos]]
+- [[file:./Temporizador-90.html][Temporizador de 1 hora y media]]
+- [[file:./Temporizador-60.html][Temporizador de 1 hora]]
 
 *** Información mostrada en la pantalla
 
 Se mostrarán distintos textos informativos en cada fase del examen:
 
 **** Antes de comenzar
-- Solo necesita: su identificación, un bolígrafo y, si lo desea, agua o refresco.
-- Retire cualquier dispositivo electrónico (móviles, smartwatches, calculadoras, pinganillos, etc.). La mera posibilidad de acceso a ellos se considera un intento de copia. No lleve gafas oscuras. Sus pabellones auditivos deben ser visibles.
-- Los intentos de copia son una falta grave cuyas consecuencias son: la calificación "cero" en actas y posibles sanciones académicas.
-- Lea detenidamente las instrucciones de la cabecera del examen.
-- Ponga su nombre en cada hoja. Entrégelas juntas dentro de uno de los pliegos.
+- Ponga su documento de identificación sobre la mesa.
+- Retire cualquier dispositivo electrónico (móviles, smartwatches, etc.). La posibilidad de acceso a alguno se considerará un intento de copia. No use gafas oscuras y mantenga los oídos visibles.
+- Los intentos de copia son faltas graves: suponen un "cero" en actas y posibles sanciones académicas.
+- Lea las instrucciones del examen detenidamente.
+- Ponga su nombre en cada hoja.
 - Indique el grupo en el que está matriculado.
 - Le deseamos mucho éxito.
 
 **** Durante el examen
 
-- Retire cualquier dispositivo electrónico (móviles, smartwatches, calculadoras, pinganillos, etc.). La mera posibilidad de acceso a ellos se considera un intento de copia. No lleve gafas oscuras. Sus pabellones auditivos deben ser visibles.
-- Los intentos de copia son una falta grave cuyas consecuencias son: la calificación "cero" en actas y posibles sanciones académicas.
-- Lea detenidamente las instrucciones de la cabecera del examen.
-- Ponga su nombre en cada hoja. Entrégelas juntas dentro de uno de los pliegos.
+- Ponga su documento de identificación sobre la mesa.
+- Retire cualquier dispositivo electrónico (móviles, smartwatches, etc.). La posibilidad de acceso a alguno se considerará un intento de copia. No use gafas oscuras y mantenga los oídos visibles.
+- Los intentos de copia son faltas graves: suponen un "cero" en actas y posibles sanciones académicas.
+- Lea las instrucciones del examen detenidamente.
+- Si necesita más papel, levante la mano y el personal encargado le atenderá.
+- Ponga su nombre en cada hoja.
 - Indique el grupo en el que está matriculado.
-- Si necesita más hojas, levante la mano. El personal encargado le proporcionará las necesarias de manera inmediata.
 
 **** El último cuarto de hora
 
-- Ponga su nombre en cada hoja. Entrégelas juntas dentro de uno de los pliegos.
+- Ponga su nombre en cada hoja.
 - Indique el grupo en el que está matriculado.
-- Para no perturbar la concentración de los demás, se solicita a los estudiantes que eviten hacer ruido o retirarse de manera apresurada durante los últimos 15 minutos del examen.
+- Al finalizar, entrege todas las hojas juntas.
+- Si desea entregar el examen y abandonar el aula, hágalo discretamente para no distraer a sus compañeros.
 
 **** Una vez finalizado el examen
 
 - El examen ha concluido.
-- Espere en su asiento a que el profesor recoja su examen.
+- Espere en su asiento a que el profesor recoja su examen. Entréguelo en cuanto se lo pidan. No demore la recogida.
+- Gracias por su participación.
+- Le deseamos un buen descanso y éxito en sus demás actividades académicas.
+
+
+** Matemáticas II
+- [[file:./Mates2-120.html][Temporizador de 2 horas]]
+- [[file:./Mates2-105.html][Temporizador de 1 hora y tres cuartos]]
+- [[file:./Mates2-90.html][Temporizador de 1 hora y media]]
+
+*** Información mostrada en la pantalla
+
+Se mostrarán distintos textos informativos en cada fase del examen:
+
+**** Antes de comenzar
+- Ponga su documento de identificación sobre la mesa.
+- Retire cualquier dispositivo electrónico (móviles, smartwatches, calculadoras, etc.). La posibilidad de acceso a alguno se considerará un intento de copia. No use gafas oscuras y mantenga los oídos visibles.
+- Los intentos de copia son faltas graves: suponen un "cero" en actas y posibles sanciones académicas.
+- Lea las instrucciones del examen detenidamente.
+- Ponga su nombre en cada hoja.
+- Indique el grupo en el que está matriculado.
+- Les deseamos mucho éxito.
+
+**** Durante el examen
+- Ponga su documento de identificación sobre la mesa.
+- Retire cualquier dispositivo electrónico (móviles, smartwatches, calculadoras, etc.). La posibilidad de acceso a alguno se considerará un intento de copia. No use gafas oscuras y mantenga los oídos visibles.
+- Los intentos de copia son faltas graves: suponen un "cero" en actas y posibles sanciones académicas.
+- Lea las instrucciones del examen detenidamente.
+- Ponga su nombre en cada hoja.
+- Indique el grupo en el que está matriculado.
+- Si necesita más hojas, levante la mano. El personal encargado le proporcionará las que necesite.
+
+**** El último cuarto de hora
+
+- Ponga su nombre en cada hoja.
+- Indique el grupo en el que está matriculado.
+- Al finalizar, entrege todas las hojas juntas (dentro de uno de los pliegos).
+- Si desea entregar el examen y abandonar el aula, hágalo discretamente para no distraer a sus compañeros.
+
+**** Una vez finalizado el examen
+
+- El examen ha concluido.
+- Espere en su asiento a que el profesor recoja su examen. Entréguelo en cuanto se lo pidan. No demore la recogida.
 - Gracias por su participación.
 - Le deseamos un buen descanso y éxito en sus demás actividades académicas.
