@@ -6,13 +6,8 @@
 
 # ###########
 # ESTO DA EL FORMATO FINAL DE LA PÁGINA WEB VÉASE [[https://olmon.gitlab.io/org-themes/]]
-# +SETUPFILE: css/simple_inlineUCM.theme  
 #+SETUPFILE: ./css/bigblow_inline.theme
 # ###########
-
-#+attr_html: :width 320px
-# https://www.ucm.es/data/cont/docs/3-2016-07-21-Marca%20UCM%20logo%20negro.png
-
 
 1. Antes de comenzar, *abra =SuTemporizador.html= en un navegador*.
    - Presione =f= para activar el modo de pantalla completa.
