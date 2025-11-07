@@ -24,13 +24,16 @@
    - Pause o reanude el temporizador presionando de nuevo la barra espaciadora.
    - Se añadirá a la URL un timestamp (con el inicio más el tiempo de pausa). Si el equipo se reinicia, podrá *reanudar el temporizador desde el historial del navegador*.
 
-/Temporizador de demostración de 2 minutos [[file:./Temporizador-demo.html][aquí]]./
+/Temporizador de demostración de 2 minutos [[file:./temporizadores/Temporizador-demo.html][aquí]]./
 
 ** Temporizador genérico
-- [[file:./Temporizador-120.html][Temporizador de 2 horas]]
-- [[file:./Temporizador-105.html][Temporizador de 1 hora y tres cuartos]]
-- [[file:./Temporizador-90.html][Temporizador de 1 hora y media]]
-- [[file:./Temporizador-60.html][Temporizador de 1 hora]]
+- [[file:./temporizadores/Temporizador-60.html][Temporizador de 1 hora]]
+- [[file:./temporizadores/Temporizador-90.html][Temporizador de 1 hora y media]]
+- [[file:./temporizadores/Temporizador-105.html][Temporizador de 1 hora y tres cuartos]]
+ 
+- [[file:./temporizadores/Temporizador-120.html][Temporizador de 2 horas]]
+- [[file:./temporizadores/Temporizador-135.html][Temporizador de 2 horas y cuarto]]
+- [[file:./temporizadores/Temporizador-150.html][Temporizador de 2 horas y media]]
 
 *** Información mostrada en la pantalla
 
@@ -71,9 +74,9 @@ Se mostrarán distintos textos informativos en cada fase del examen:
 
 
 ** Matemáticas II
-- [[file:./Mates2-120.html][Temporizador de 2 horas]]
-- [[file:./Mates2-105.html][Temporizador de 1 hora y tres cuartos]]
-- [[file:./Mates2-90.html][Temporizador de 1 hora y media]]
+- [[file:./temporizadores/Mates2-120.html][Temporizador de 2 horas]]
+- [[file:./temporizadores/Mates2-105.html][Temporizador de 1 hora y tres cuartos]]
+- [[file:./temporizadores/Mates2-90.html][Temporizador de 1 hora y media]]
 
 *** Información mostrada en la pantalla
 
@@ -114,9 +117,9 @@ Se mostrarán distintos textos informativos en cada fase del examen:
 
 
 ** Econometría Aplicada
-- [[file:./EctrAp-120.html][Temporizador de 2 horas]]
-- [[file:./EctrAp-105.html][Temporizador de 1 hora y tres cuartos]]
-- [[file:./EctrAp-90.html][Temporizador de 1 hora y media]]
+- [[file:./temporizadores/EctrAp-120.html][Temporizador de 2 horas]]
+- [[file:./temporizadores/EctrAp-105.html][Temporizador de 1 hora y tres cuartos]]
+- [[file:./temporizadores/EctrAp-90.html][Temporizador de 1 hora y media]]
 
 
 ** Código fuente

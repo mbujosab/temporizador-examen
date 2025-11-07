@@ -21,11 +21,11 @@ Dispone de algunos temporizadores [[https://mbujosab.github.io/temporizador-exam
 
 * Instrucciones de uso
 
-1. Revise el código fuente en el archivo [[file:./examtimer.org][=examtimer.org=]] o directametne el temporizador de demostración [[file:Temporizador-demo.html][Mates2-demo.html]].
+1. Revise el código fuente en el archivo [[file:./examtimer.org][=examtimer.org=]] o directametne el temporizador de demostración [[file:Temporizador-demo.html][Temporizador-demo.html]].
    - Configure la *duración del examen* en la línea 8. Si es necesario, puede modificar las etiquetas del temporizador en las líneas siguientes.
    - Alrededor de la línea 75, dentro de la sección =<section class="infos">=, sustituya los datos de ejemplo por la *información* relevante para su examen. Para *controlar en qué fase del examen se muestra un elemento*, utilice las siguientes clases:
 
-     #+begin_example
+     #+begin_example  :eval no
      <li class="before">Visible antes de que comience el examen.</li>
      <li class="during">Visible durante la primera parte del examen.</li>
      <li class="homestretch">Visible durante los últimos 15 minutos.</li>
@@ -34,7 +34,7 @@ Dispone de algunos temporizadores [[https://mbujosab.github.io/temporizador-exam
 
      Estas clases pueden combinarse libremente:
 
-     #+begin_example
+     #+begin_example  :eval no
      <li class="before during homestretch">Visible hasta que finalice el examen.</li>
      #+end_example
 
@@ -53,3 +53,168 @@ Dispone de algunos temporizadores [[https://mbujosab.github.io/temporizador-exam
 * Notas
 
 - El código original de este temporizador procede del repositorio [[https://github.com/doersino/exam-timer][exam-timer]].
+
+* Publicación                                                      :noexport:
+
+El siguiente =makefile= genera algunos subdirectorios y hace tangle del código =html= correspondiente a los temporizadores desde el fichero fuente [[file:examtimer.org][=examtimer.org=]].
+
+#+BEGIN_SRC makefile :noweb no-export :results silent :tangle makefile  :eval no
+publica: temporizadores README.org index.org examtimer.org
+	emacs --batch -l publica.el
+	touch $@
+
+temporizadores: directorios
+	emacs -q --batch examtimer.org -l org -f org-babel-tangle
+
+directorios:
+	mkdir -v -p .github/workflows
+	mkdir -v -p docs/temporizadores
+	touch directorios
+
+clean:
+	rm -r -f docs
+	rm -f directorios
+	rm -f publica
+
+#+END_SRC
+
+El siguiente script de elisp publica el fichero [[file:index.org][=index.org=]] en formato  =html= en el subdirectorio =./docs=. El objetivo =publica= del script =makefile= indica a =emacs= que ejecute este código de elisp mediante el siguiente comando: =emacs --batch -l publica.el=
+
+
+#+BEGIN_SRC emacs-lisp :tangle publica.el :results silent :eval no
+(require 'org)
+(require 'ox-html)
+
+(setq org-publish-project-alist
+      '(("index"
+         :base-directory "./"
+         :base-extension "org"
+         :publishing-directory "./docs/"
+         :recursive t
+         :publishing-function org-html-publish-to-html
+         :headline-levels 1 ;; Just for this example
+         :auto-preamble t
+         :auto-sitemap nil
+         :with-author t
+         :with-creator nil
+         :with-toc t
+	 :exclude "README.org\\|examtimer.org"
+	 :section-numbers nil)
+	))
+
+(org-publish-project "index")
+#+END_SRC
+
+
+** Pasos para crear la rama =gh-pages=, configurar GitHub Pages y crear el archivo =build.yml=.
+
+Esto hace las veces de un tutorial para publicación de un repositorio en GitHub en una rama específica para la publicación de ciertos ficheros generados con Actions en GutHub al hacer push de un nuevo commit.
+
+*** Pasos para crear la rama =gh-pages=
+
+1. *Crea la rama =gh-pages=*:
+   #+begin_src bash :eval no
+   git checkout --orphan gh-pages
+   git rm -rf .
+   mkdir docs
+   git commit --allow-empty -m "Initialize gh-pages branch"
+   git push origin gh-pages
+   #+end_src
+
+   #+RESULTS:
+   | D         | EctrAp-105.html            |          |            |          |        |
+   | D         | EctrAp-120.html            |          |            |          |        |
+   | D         | EctrAp-90.html             |          |            |          |        |
+   | D         | Mates2-105.html            |          |            |          |        |
+   | D         | Mates2-120.html            |          |            |          |        |
+   | D         | Mates2-90.html             |          |            |          |        |
+   | M         | README.org                 |          |            |          |        |
+   | D         | Temporizador-105.html      |          |            |          |        |
+   | D         | Temporizador-120.html      |          |            |          |        |
+   | D         | Temporizador-60.html       |          |            |          |        |
+   | D         | Temporizador-90.html       |          |            |          |        |
+   | D         | Temporizador-demo.html     |          |            |          |        |
+   | M         | examtimer.org              |          |            |          |        |
+   | D         | index.html                 |          |            |          |        |
+   | M         | index.org                  |          |            |          |        |
+   | rm        | '.gitignore'               |          |            |          |        |
+   | rm        | 'EctrAp-105.html'          |          |            |          |        |
+   | rm        | 'EctrAp-120.html'          |          |            |          |        |
+   | rm        | 'EctrAp-90.html'           |          |            |          |        |
+   | rm        | 'LICENSE'                  |          |            |          |        |
+   | rm        | 'Mates2-105.html'          |          |            |          |        |
+   | rm        | 'Mates2-120.html'          |          |            |          |        |
+   | rm        | 'Mates2-90.html'           |          |            |          |        |
+   | rm        | 'README.org'               |          |            |          |        |
+   | rm        | 'Temporizador-105.html'    |          |            |          |        |
+   | rm        | 'Temporizador-120.html'    |          |            |          |        |
+   | rm        | 'Temporizador-60.html'     |          |            |          |        |
+   | rm        | 'Temporizador-90.html'     |          |            |          |        |
+   | rm        | 'Temporizador-demo.html'   |          |            |          |        |
+   | rm        | 'css/bigblow_inline.theme' |          |            |          |        |
+   | rm        | 'examtimer.org'            |          |            |          |        |
+   | rm        | 'index.html'               |          |            |          |        |
+   | rm        | 'index.org'                |          |            |          |        |
+   | rm        | 'photo.jpg'                |          |            |          |        |
+   | [gh-pages | (commit-raíz)              | 93fa452] | Initialize | gh-pages | branch |
+
+2. *Configurar GitHub Pages*:
+   - Ir a la configuración del repositorio en GitHub (Settings).
+   - Buscar la sección "Pages".
+   - En "Source", seleccionar la rama =gh-pages= y el directorio =/(root)= o =/docs= según tu preferencia (en este repositorio voy a usar =/docs=).
+   - Guarda los cambios.
+
+*** Contenido del archivo =.github/workflows/build.yml=
+
+#+BEGIN_SRC emacs-lisp :exports none :results silent :tangle no :eval yes
+(unless (file-directory-p ".github")
+  (make-directory ".github"))
+(unless (file-directory-p ".github/workflows")
+  (make-directory ".github/workflows"))
+#+END_SRC
+
+
+A continuación, el contenido sugerido para =build.yml=:
+
+#+begin_src yaml :tangle .github/workflows/build.yml
+name: Build and Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Emacs
+        uses: emacs-actions/setup-emacs@v2
+
+      - name: Tangle README.org
+        run: emacs --batch README.org -l org -f org-babel-tangle
+
+      - name: Run Makefile
+        run: make publica
+
+      - name: Deploy to gh-pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add docs
+          git commit -m "Deploy to GitHub Pages"
+          git push origin gh-pages --force
+#+end_src
+
+*** Notas adicionales:
+
+- *Verificar que el repositorio tiene un README.org y el makefile correctamente configurado.*
+- *Asegúrate de que =emacs-actions/setup-emacs= esté configurado correctamente en tu entorno.*
+- *La acción =git push= se hace con =--force= para sobrescribir los cambios en la rama =gh-pages=, asegúrate de que esto es lo que deseas.*
+- *Recuerda que podrás ver tus publicaciones en la URL configurada en GitHub Pages, que generalmente es =https://<tu_usuario>.github.io/<tu_repositorio>/=.*
+
+Con estos pasos, al hacer un push a la rama =main=, se ejecutará este flujo de trabajo, se generarán los archivos y se desplegarán automáticamente en GitHub Pages.

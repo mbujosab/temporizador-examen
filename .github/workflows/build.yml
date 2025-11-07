@@ -1,0 +1,31 @@
+name: Build and Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Emacs
+        uses: emacs-actions/setup-emacs@v2
+
+      - name: Tangle README.org
+        run: emacs --batch README.org -l org -f org-babel-tangle
+
+      - name: Run Makefile
+        run: make publica
+
+      - name: Deploy to gh-pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add docs
+          git commit -m "Deploy to GitHub Pages"
+          git push origin gh-pages --force
