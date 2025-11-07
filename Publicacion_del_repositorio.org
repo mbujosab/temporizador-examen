@@ -14,7 +14,7 @@ publica: temporizadores README.org index.org examtimer.org
 	emacs --batch -l publica.el
 	touch $@
 
-temporizadores: 
+temporizadores: directorios
 	emacs -q --batch examtimer.org -l org -f org-babel-tangle
 
 directorios:
