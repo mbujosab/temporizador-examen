@@ -69,6 +69,7 @@ temporizadores: directorios
 directorios:
 	mkdir -v -p .github/workflows
 	mkdir -v -p docs/temporizadores
+	cp -a ./css docs/
 	touch directorios
 
 clean:
@@ -113,56 +114,12 @@ Esto hace las veces de un tutorial para publicación de un repositorio en GitHub
 *** Pasos para crear la rama =gh-pages=
 
 1. *Crea la rama =gh-pages=*:
-   #+begin_src bash :eval no
-   git checkout --orphan gh-pages
-   git rm -rf .
-   mkdir docs
-   git commit --allow-empty -m "Initialize gh-pages branch"
-   git push origin gh-pages
-   #+end_src
-
-   #+RESULTS:
-   | D         | EctrAp-105.html            |          |            |          |        |
-   | D         | EctrAp-120.html            |          |            |          |        |
-   | D         | EctrAp-90.html             |          |            |          |        |
-   | D         | Mates2-105.html            |          |            |          |        |
-   | D         | Mates2-120.html            |          |            |          |        |
-   | D         | Mates2-90.html             |          |            |          |        |
-   | M         | README.org                 |          |            |          |        |
-   | D         | Temporizador-105.html      |          |            |          |        |
-   | D         | Temporizador-120.html      |          |            |          |        |
-   | D         | Temporizador-60.html       |          |            |          |        |
-   | D         | Temporizador-90.html       |          |            |          |        |
-   | D         | Temporizador-demo.html     |          |            |          |        |
-   | M         | examtimer.org              |          |            |          |        |
-   | D         | index.html                 |          |            |          |        |
-   | M         | index.org                  |          |            |          |        |
-   | rm        | '.gitignore'               |          |            |          |        |
-   | rm        | 'EctrAp-105.html'          |          |            |          |        |
-   | rm        | 'EctrAp-120.html'          |          |            |          |        |
-   | rm        | 'EctrAp-90.html'           |          |            |          |        |
-   | rm        | 'LICENSE'                  |          |            |          |        |
-   | rm        | 'Mates2-105.html'          |          |            |          |        |
-   | rm        | 'Mates2-120.html'          |          |            |          |        |
-   | rm        | 'Mates2-90.html'           |          |            |          |        |
-   | rm        | 'README.org'               |          |            |          |        |
-   | rm        | 'Temporizador-105.html'    |          |            |          |        |
-   | rm        | 'Temporizador-120.html'    |          |            |          |        |
-   | rm        | 'Temporizador-60.html'     |          |            |          |        |
-   | rm        | 'Temporizador-90.html'     |          |            |          |        |
-   | rm        | 'Temporizador-demo.html'   |          |            |          |        |
-   | rm        | 'css/bigblow_inline.theme' |          |            |          |        |
-   | rm        | 'examtimer.org'            |          |            |          |        |
-   | rm        | 'index.html'               |          |            |          |        |
-   | rm        | 'index.org'                |          |            |          |        |
-   | rm        | 'photo.jpg'                |          |            |          |        |
-   | [gh-pages | (commit-raíz)              | 93fa452] | Initialize | gh-pages | branch |
-
-2. *Configurar GitHub Pages*:
-   - Ir a la configuración del repositorio en GitHub (Settings).
-   - Buscar la sección "Pages".
-   - En "Source", seleccionar la rama =gh-pages= y el directorio =/(root)= o =/docs= según tu preferencia (en este repositorio voy a usar =/docs=).
-   - Guarda los cambios.
+2. en Settings -> Pages
+   - indicar que la rama de publicación es =gh-pages= 
+   - el directorio =/docs=
+   Y salvar esta configuración
+2. en Settings -> Secrets and Variables -> Actions
+   - en =Repository secrets= añadir un secreto previamente creado. El nombre iondicado debe ser el mismo que se indica al final de =.github/workflows/build.yml=
 
 *** Contenido del archivo =.github/workflows/build.yml=
 
