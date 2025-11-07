@@ -105,8 +105,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y emacs
 
-      - name: Tangle README.org
-        run: emacs --batch README.org -l org -f org-babel-tangle
+      - name: Tangle Publicacion_del_repositorio.org
+        run: emacs --batch Publicacion_del_repositorio.org -l org -f org-babel-tangle
 
       - name: Run Makefile
         run: make publica
