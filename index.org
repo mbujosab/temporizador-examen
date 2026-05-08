@@ -13,7 +13,7 @@
    - Presione =f= para activar el modo de pantalla completa.
    - Si es necesario, ajuste el tamaño del texto con las herramientas del navegador (usualmente =Ctrl/⌘= + =+/-=).
    - Cierre cualquier software que muestre notificaciones o ventanas emergentes durante el examen.
-   #    - Desactive el modo de suspensión de su equipo (o ajústelo a un tiempo largo). Desactive también cualquier configuración para la suspensión de pantalla o salvapantallas.
+   - Desactive el modo de suspensión de su equipo (o ajústelo a un tiempo largo). Desactive también cualquier configuración para la suspensión de pantalla o salvapantallas.
 
 2. Una vez listo, *presione la barra espaciadora* para iniciar el temporizador.
    - Pause o reanude el temporizador presionando de nuevo la barra espaciadora.

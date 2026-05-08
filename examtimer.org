@@ -9,301 +9,277 @@ por tipo (genérico, por asignatura) y duración.
 ** 15 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-15.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-  	var duration = 15;
-  	var minutosfinales = 5;
-  	
-  	<<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 15 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 20 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-20.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 20;
-        var minutosfinales = 5;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 20 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 30 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-30.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 30;
-        var minutosfinales = 5;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>        
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 30 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 45 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-45.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>      
-      <script>
-        
-        var duration = 45;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 45 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 1 hora
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-60.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 60;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 60 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 1 hora y cuarto
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-75.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 75;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 75 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 1 hora y media
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-90.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 90;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 1 hora y tres cuartos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-105.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 105;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 1 hora y 50 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-110.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 110;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 110 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 2 horas
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-120.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 120;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 2 horas y cuarto
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-135.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-        var duration = 135;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 135 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 ** 2 horas y media
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-150.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-      var duration = 150;
-      var minutosfinales = 15;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 150 Y TEXTO DE LA ESFERA>>
       
-      <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 * Asignaturas
@@ -313,77 +289,70 @@ por tipo (genérico, por asignatura) y duración.
 *** Matemáticas II de 1 hora y media
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Mates2-90.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Exam timer</title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
 
-      <script>
-        
-      var duration = 90;
-      var minutosfinales = 15;
+    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
       
-      <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN MATEMÁTICAS II>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN MATEMÁTICAS II>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 *** Matemáticas II de 1 hora y tres cuartos
 
 #+BEGIN_SRC html  :tangle docs/temporizadores/Mates2-105.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Exam timer</title>
-      <script>
-        
-      var duration = 105;
-      var minutosfinales = 15;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+
+    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
       
-      <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN MATEMÁTICAS II>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN MATEMÁTICAS II>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 *** Matemáticas II de 2 horas
 
 #+BEGIN_SRC html  :tangle docs/temporizadores/Mates2-120.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Exam timer</title>
-      <script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+
+    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
     
-        var duration = 120;
-        var minutosfinales = 15;
-        
-      <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN MATEMÁTICAS II>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+    <<INFORMACIÓN MATEMÁTICAS II>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 
@@ -392,77 +361,73 @@ por tipo (genérico, por asignatura) y duración.
 *** Econometría aplicada de 1 hora y media
 
 #+BEGIN_SRC html :tangle docs/temporizadores/EctrAp-90.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Exam timer</title>
-      <script>
-        
-      var duration = 90;
-      var minutosfinales = 15;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+
+    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
       
-      <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN ECONOMETRÍA APLICADA>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 *** Econometría aplicada de 1 hora y tres cuartos
 
 #+BEGIN_SRC html  :tangle docs/temporizadores/EctrAp-105.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Exam timer</title>
-      <script>
-        
-        var duration = 105;
-        var minutosfinales = 15;
-        
-        <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN ECONOMETRÍA APLICADA>>
-        <<sección temporizador>>
-  	<<script funcionamiento>>
-    </body>
-  </html>    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+
+    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 *** Econometría aplicada de 2 horas
 
 #+BEGIN_SRC html  :tangle docs/temporizadores/EctrAp-120.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Exam timer</title>
-      <script>
-        
-      var duration = 120;
-      var minutosfinales = 15;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exam timer</title>
+
+    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
       
-      <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN ECONOMETRÍA APLICADA>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
+
+
 
 * Partes específicas de código
 
@@ -554,6 +519,134 @@ por tipo (genérico, por asignatura) y duración.
         <li class="after">Le deseamos un buen descanso y éxito en sus demás actividades académicas.</li>
       </ul>
   </section>
+#+END_SRC
+
+
+
+** Duración de examen
+
+
+#+name: DURACIÓN 15 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 15;
+    var minutosfinales = 5;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 20 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 20;
+    var minutosfinales = 5;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 30 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 30;
+    var minutosfinales = 5;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 45 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 45;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 60 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 60;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 75 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 75;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
+#+name: DURACIÓN 90 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 90;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+#+name: DURACIÓN 105 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 105;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+#+name: DURACIÓN 110 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 110;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+#+name: DURACIÓN 120 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 120;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+#+name: DURACIÓN 135 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 135;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+#+name: DURACIÓN 150 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 150;
+    var minutosfinales = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+#+name: TEXTO DE LA ESFERA
+#+BEGIN_SRC html
+var remainingLabel = "m";
+var remainingAboveContent = "";
+var remainingBelowContent = "TIEMPO RESTANTE";
+var startContent = "START";
+var endContent = "END";
 #+END_SRC
 
 
@@ -901,27 +994,35 @@ El =15= de la línea =if (remaining > 15 * 60 * 1000) {= indica cuántos son los
 
 Temporizador con una duración de 2 minutos. Durante el último minuto se muestran las instrucciones correspondientes a los últimos momentos antes de finalizar el examen (es lo que se ve en los últimos 15 minutos de los demás exámenes).
 
+#+name: DURACIÓN 2 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 2;
+    var minutosfinales = 1;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-demo.html :noweb yes
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>Temporizador</title>
-      <script>
-        
-      var duration = 2;
-      var minutosfinales = 1;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 2 Y TEXTO DE LA ESFERA>>
       
-      <<TEXTO DE LA ESFERA>>
-      </script>
-      <<definición de estilo>>
-    </head>
-    <body>
-      <<INFORMACIÓN GENERAL>>
-      <<sección temporizador>>
-      <<script funcionamiento>>
-    </body>
-  </html>    
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
 #+END_SRC
 
 
