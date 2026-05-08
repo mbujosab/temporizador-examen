@@ -59,7 +59,7 @@ Se mostrarán distintos textos informativos en cada fase del examen:
 - Ponga su nombre en cada hoja.
 - Indique el grupo en el que está matriculado.
 
-**** El último cuarto de hora
+**** Durante los últimos minutos
 
 - Ponga su nombre en cada hoja.
 - Indique el grupo en el que está matriculado.
@@ -101,7 +101,7 @@ Se mostrarán distintos textos informativos en cada fase del examen:
 - Indique el grupo en el que está matriculado.
 - Si necesita más hojas, levante la mano. El personal encargado le proporcionará las que necesite.
 
-**** El último cuarto de hora
+**** Durante los últimos minutos
 
 - Ponga su nombre en cada hoja.
 - Indique el grupo en el que está matriculado.
