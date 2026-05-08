@@ -11,7 +11,7 @@
 
 1. Antes de comenzar, *abra =SuTemporizador.html= en un navegador*.
    - Presione =f= para activar el modo de pantalla completa.
-   - Si es necesario, ajuste el tamaño del texto con las herramientas del navegador (usualmente =Ctrl/⌘ + +/-=).
+   - Si es necesario, ajuste el tamaño del texto con las herramientas del navegador (usualmente =Ctrl/⌘= + =+/-=).
    - Cierre cualquier software que muestre notificaciones o ventanas emergentes durante el examen.
    #    - Desactive el modo de suspensión de su equipo (o ajústelo a un tiempo largo). Desactive también cualquier configuración para la suspensión de pantalla o salvapantallas.
 

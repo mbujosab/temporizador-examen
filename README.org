@@ -26,7 +26,7 @@ Dispone de algunos temporizadores [[https://mbujosab.github.io/temporizador-exam
    - Desactive el modo de suspensión de su equipo (o ajústelo a un tiempo suficientemente largo). Si existe una configuración independiente para la suspensión de pantalla o el salvapantallas, desactívela también.
    - Si utiliza software que pueda mostrar notificaciones o ventanas emergentes (especialmente Java), es recomendable cerrarlo durante el examen.
    - Presione =f= para activar el modo de pantalla completa.
-   - Si es necesario, ajuste el tamaño del texto utilizando las herramientas del navegador (usualmente =Ctrl/⌘ + +/-=).
+   - Si es necesario, ajuste el tamaño del texto utilizando las herramientas del navegador (usualmente =Ctrl/⌘= + =+/-=).
 
 2. Una vez todo esté preparado, *presione la barra espaciadora* para iniciar el cronómetro.
    - Puede *pausar o reanudar el cronómetro* presionando nuevamente la barra espaciadora.
@@ -34,7 +34,7 @@ Dispone de algunos temporizadores [[https://mbujosab.github.io/temporizador-exam
 
 * Creación de nuevos temporizadores
 
-Revise el código de los archivos en [[https://github.com/mbujosab/temporizador-examen/tree/gh-pages/temporizadores][=temporizadores=]] o en el fichero con el código fuente [[https://github.com/mbujosab/temporizador-examen/blob/main/examtimer.org][examtimer.org]].
+Revise el código de los archivos en [[https://github.com/mbujosab/temporizador-examen/tree/gh-pages/temporizadores][temporizadores]] o en el fichero con el código fuente [[https://github.com/mbujosab/temporizador-examen/blob/main/examtimer.org][examtimer.org]].
 - Configure la *duración del examen* en la línea 8. Si es necesario, puede modificar las etiquetas del temporizador en las líneas siguientes.
 - Alrededor de la línea 75, dentro de la sección ~<section class="infos">~, sustituya los datos de ejemplo por la *información* relevante para su examen. Para *controlar en qué fase del examen se muestra un elemento*, utilice las siguientes clases:
 #+begin_example  :eval no

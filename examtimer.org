@@ -9,277 +9,301 @@ por tipo (genérico, por asignatura) y duración.
 ** 15 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-15.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 15 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+  	var duration = 15;
+  	var minutosfinales = 5;
+  	
+  	<<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 20 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-20.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 20 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 20;
+        var minutosfinales = 5;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 30 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-30.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 30 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 30;
+        var minutosfinales = 5;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>        
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 45 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-45.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 45 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>      
+      <script>
+        
+        var duration = 45;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 1 hora
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-60.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 60 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 60;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 1 hora y cuarto
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-75.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 75 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 75;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 1 hora y media
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-90.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 90;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 1 hora y tres cuartos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-105.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 105;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 1 hora y 50 minutos
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-110.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 110 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 110;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 2 horas
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-120.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 120;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 2 horas y cuarto
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-135.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 135 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+        var duration = 135;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 ** 2 horas y media
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-150.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 150 Y TEXTO DE LA ESFERA>>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+      var duration = 150;
+      var minutosfinales = 15;
       
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+      <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 * Asignaturas
@@ -289,70 +313,77 @@ por tipo (genérico, por asignatura) y duración.
 *** Matemáticas II de 1 hora y media
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Mates2-90.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Exam timer</title>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exam timer</title>
 
-    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
+      <script>
+        
+      var duration = 90;
+      var minutosfinales = 15;
       
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN MATEMÁTICAS II>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+      <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN MATEMÁTICAS II>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 *** Matemáticas II de 1 hora y tres cuartos
 
 #+BEGIN_SRC html  :tangle docs/temporizadores/Mates2-105.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Exam timer</title>
-
-    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exam timer</title>
+      <script>
+        
+      var duration = 105;
+      var minutosfinales = 15;
       
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN MATEMÁTICAS II>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+      <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN MATEMÁTICAS II>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 *** Matemáticas II de 2 horas
 
 #+BEGIN_SRC html  :tangle docs/temporizadores/Mates2-120.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Exam timer</title>
-
-    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exam timer</title>
+      <script>
     
-    <<INFORMACIÓN MATEMÁTICAS II>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+        var duration = 120;
+        var minutosfinales = 15;
+        
+      <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN MATEMÁTICAS II>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 
@@ -361,73 +392,77 @@ por tipo (genérico, por asignatura) y duración.
 *** Econometría aplicada de 1 hora y media
 
 #+BEGIN_SRC html :tangle docs/temporizadores/EctrAp-90.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Exam timer</title>
-
-    <<DURACIÓN 90 Y TEXTO DE LA ESFERA>>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exam timer</title>
+      <script>
+        
+      var duration = 90;
+      var minutosfinales = 15;
       
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+      <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN ECONOMETRÍA APLICADA>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 *** Econometría aplicada de 1 hora y tres cuartos
 
 #+BEGIN_SRC html  :tangle docs/temporizadores/EctrAp-105.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Exam timer</title>
-
-    <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
-      
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exam timer</title>
+      <script>
+        
+        var duration = 105;
+        var minutosfinales = 15;
+        
+        <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN ECONOMETRÍA APLICADA>>
+        <<sección temporizador>>
+  	<<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
 
 *** Econometría aplicada de 2 horas
 
 #+BEGIN_SRC html  :tangle docs/temporizadores/EctrAp-120.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Exam timer</title>
-
-    <<DURACIÓN 120 Y TEXTO DE LA ESFERA>>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Exam timer</title>
+      <script>
+        
+      var duration = 120;
+      var minutosfinales = 15;
       
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN ECONOMETRÍA APLICADA>>
-
-    <<sección temporizador>>
-    <<script funcionamiento>>
-  </body>
-</html>    
+      <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN ECONOMETRÍA APLICADA>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
-
-
 
 * Partes específicas de código
 
@@ -519,122 +554,6 @@ por tipo (genérico, por asignatura) y duración.
         <li class="after">Le deseamos un buen descanso y éxito en sus demás actividades académicas.</li>
       </ul>
   </section>
-#+END_SRC
-
-
-
-** Duración de examen
-
-
-#+name: DURACIÓN 15 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 15;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-
-#+name: DURACIÓN 20 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 20;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-
-#+name: DURACIÓN 30 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 30;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-
-#+name: DURACIÓN 45 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 45;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-
-#+name: DURACIÓN 60 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 60;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-
-#+name: DURACIÓN 75 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 75;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-
-#+name: DURACIÓN 90 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 90;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-#+name: DURACIÓN 105 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 105;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-#+name: DURACIÓN 110 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 110;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-#+name: DURACIÓN 120 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 120;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-#+name: DURACIÓN 135 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 135;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-#+name: DURACIÓN 150 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 150;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-#+name: TEXTO DE LA ESFERA
-#+BEGIN_SRC html
-var remainingLabel = "m";
-var remainingAboveContent = "";
-var remainingBelowContent = "TIEMPO RESTANTE";
-var startContent = "START";
-var endContent = "END";
 #+END_SRC
 
 
@@ -949,7 +868,7 @@ El =15= de la línea =if (remaining > 15 * 60 * 1000) {= indica cuántos son los
             state = "before";
         } else {
             var remaining = Math.max(eWithPauses.getTime() - (new Date()).getTime(), 0);
-            if (remaining > 15 * 60 * 1000) {
+            if (remaining > minutosfinales * 60 * 1000) {
                 state = "during";
             } else if (remaining > 0) {
                 state = "homestretch";
@@ -978,286 +897,31 @@ El =15= de la línea =if (remaining > 15 * 60 * 1000) {= indica cuántos son los
 #+END_SRC
 
 
-#+name: DURACIÓN 2 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 2;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
-
 * Versión DEMO del temporizador genérico
 
 Temporizador con una duración de 2 minutos. Durante el último minuto se muestran las instrucciones correspondientes a los últimos momentos antes de finalizar el examen (es lo que se ve en los últimos 15 minutos de los demás exámenes).
 
 #+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-demo.html :noweb yes
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Temporizador</title>
-
-    <<DURACIÓN 2 Y TEXTO DE LA ESFERA>>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Temporizador</title>
+      <script>
+        
+      var duration = 2;
+      var minutosfinales = 1;
       
-    <<definición de estilo>>
-  </head>
-  <body>
-    
-    <<INFORMACIÓN GENERAL>>
-
-    <<sección temporizador>>
-        <script>
-
-        // via https://stackoverflow.com/a/18473154
-        function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
-            let angleInRadians = (angleInDegrees - 90) * Math.PI / 180.0;
-
-            return {
-                x: centerX + (radius * Math.cos(angleInRadians)),
-                y: centerY + (radius * Math.sin(angleInRadians))
-            };
-        }
-
-        // via https://stackoverflow.com/a/18473154
-        function describeArc(x, y, radius, startAngle, endAngle) {
-            let start = polarToCartesian(x, y, radius, endAngle);
-            let end = polarToCartesian(x, y, radius, startAngle);
-
-            let largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
-
-            let d = [
-                "M", start.x, start.y,
-                "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y
-            ].join(" ");
-
-            return d;
-        }
-
-        // via https://github.com/doersino/markdeep-slides/blob/master/markdeep-slides/markdeep-slides.js
-        function toggleFullscreen() {
-            var fullscreen = !!(window.fullScreen || document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
-
-            if (fullscreen) {
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                } else if (document.webkitExitFullscreen) {
-                    document.webkitExitFullscreen();
-                } else if (document.mozCancelFullScreen) {
-                    document.mozCancelFullScreen();
-                } else if (document.msExitFullscreen) {
-                    document.msExitFullscreen();
-                }
-            } else {
-                var root = document.documentElement;
-                if (root.requestFullscreen) {
-                    root.requestFullscreen();
-                } else if (root.mozRequestFullScreen) {
-                    root.mozRequestFullScreen();
-                } else if (root.webkitRequestFullscreen) {
-                    root.webkitRequestFullscreen();
-                } else if (root.msRequestFullscreen) {
-                    root.msRequestFullscreen();
-                }
-            }
-        }
-
-        var started = false;
-        var s;
-        var e;
-
-        var paused = false;
-        var p;
-        var pPrev = 0;
-        var pCurr = 0;
-        var pTotal = 0;
-        var eWithPauses;
-
-        // resume timer after a reload
-        if (window.location.hash) {
-            let loc = window.location.hash.substring(1);
-            let [rawS, rawPPrev] = loc.split("+");
-
-            s = new Date(parseInt(rawS) * 1000);
-            pPrev = parseInt(rawPPrev * 1000);
-            e = new Date(s.getTime() + duration*60000);
-
-            started = true;
-        }
-
-        // handle key presses
-        document.body.onkeyup = function(event) {
-
-            // space bar => start timer or pause/unpause
-            if (event.keyCode == 32) {
-                if (!started) {
-                    s = new Date();
-                    e = new Date(s.getTime() + duration*60000);
-
-                    started = true;
-                    window.location.hash = Math.round(s.getTime() / 1000) + "+" + pTotal;
-                } else {
-                    if (!paused) {
-                        p = new Date();
-                    } else {
-                        pPrev += pCurr;
-                        pCurr = 0;
-                    }
-                    paused = !paused;
-                }
-            }
-
-            // f key => toggle fullscreen
-            if (event.keyCode == 70) {
-                toggleFullscreen();
-            }
-        };
-
-        // hide cursor once it hasn't been moved for 2s
-        // based on https://stackoverflow.com/a/31798987
-        var cursorTimeout;
-        document.body.onmousemove = function() {
-            if (document.body.style.cursor != "none") {
-                if (cursorTimeout) {
-                    clearTimeout(cursorTimeout);
-                }
-            } else {
-                document.body.style.cursor = "auto";
-            }
-
-            cursorTimeout = setTimeout(function() {
-                document.body.style.cursor = "none";
-            }, 2000);
-        };
-
-        // run the following 10 times a second. yes, much of this could be run
-        // only once, but none of it is massively resource-intensive and keeping
-        // it this way automatically adjusts the size of everything in case the
-        // browser window is resized or the scaling factor is changed while the
-        // timer is started
-        setInterval(function() {
-            let w = document.getElementById("timer").clientWidth;
-            let h = document.getElementById("timer").clientHeight;
-            let size = Math.min(h, w);
-
-            // compute line thicknesses and font sizes
-            let spinnerArcThickness = size / 25;
-            let spinnerBackgroundArcThickness = size / 60;
-            let remainingFontSize = size / 5;
-            let remainingAboveFontSize = size / 15;
-            let remainingBelowFontSize = size / 15;
-            let startEndFontSize = size / 25;
-
-            // define spinner/arc position
-            let spinnerRadius = size / 2 - spinnerArcThickness / 2;
-            let spinnerX = w / 2;
-            let spinnerY = h / 2;
-
-            // define position of labels
-            let remainingY = spinnerY;
-            let remainingAboveY = remainingY - .7 * (remainingFontSize + remainingAboveFontSize);
-            let remainingBelowY = remainingY + .6 * (remainingFontSize + remainingBelowFontSize);
-            // weird: the spacing's off if this ^ is the same as the other one
-
-            // shift labels if only one is set
-            if (remainingAboveContent && !remainingBelowContent) {
-                remainingY += .25 * (remainingFontSize + remainingAboveFontSize);
-                remainingAboveY += .25 * (remainingFontSize + remainingAboveFontSize);
-            }
-            if (!remainingAboveContent && remainingBelowContent) {
-                remainingY -= .25 * (remainingFontSize + remainingAboveFontSize);
-                remainingBelowY -= .25 * (remainingFontSize + remainingAboveFontSize);
-            };
-
-            // compute radius of arc on which start and end times will be placed
-            let startEndCircleRadius = spinnerRadius - startEndFontSize;
-
-            // apply computed values
-            document.getElementById("spinner").setAttribute("stroke-width", spinnerArcThickness);
-            document.getElementById("spinner-background").setAttribute("stroke-width", spinnerBackgroundArcThickness);
-            document.getElementById("remaining").setAttribute("font-size", remainingFontSize);
-            document.getElementById("remaining").setAttribute("x", spinnerX);
-            document.getElementById("remaining").setAttribute("y", remainingY);
-            document.getElementById("remaining-above").setAttribute("font-size", remainingAboveFontSize);
-            document.getElementById("remaining-above").innerHTML = remainingAboveContent;
-            document.getElementById("remaining-above").setAttribute("x", spinnerX);
-            document.getElementById("remaining-above").setAttribute("y", remainingAboveY);
-            document.getElementById("remaining-below").setAttribute("font-size", remainingBelowFontSize);
-            document.getElementById("remaining-below").innerHTML = remainingBelowContent;
-            document.getElementById("remaining-below").setAttribute("x", spinnerX);
-            document.getElementById("remaining-below").setAttribute("y", remainingBelowY);
-            document.getElementById("start-end-circle").setAttribute("d", describeArc(spinnerX, spinnerY, startEndCircleRadius, 0, 359.999));
-            document.getElementById("start-end").setAttribute("font-size", startEndFontSize);
-            document.getElementById("start-end").setAttribute("x", Math.PI * startEndCircleRadius);
-
-            if (!started) {
-                document.getElementById("timer").style.opacity = 0.5;
-
-                // if timer not yet started: show total time
-                document.getElementById("spinner").setAttribute("d", describeArc(spinnerX, spinnerY, spinnerRadius, 0, 359.999));
-                document.getElementById("spinner-background").setAttribute("d", describeArc(spinnerX, spinnerY, spinnerRadius, 0, 359.999));
-                document.getElementById("remaining").innerHTML = duration + remainingLabel;
-
-            } else {
-
-                // handle pauses
-                if (paused) {
-                    pCurr = (new Date()).getTime() - p.getTime();
-                    history.replaceState({}, '', '#' + Math.round(s.getTime() / 1000) + "+" + Math.round(pTotal / 1000));
-                }
-                pTotal = pPrev + pCurr;
-                eWithPauses = new Date(e.getTime() + pTotal);
-
-                // if timer started: show start and end times and update timer
-                document.getElementById("start-end-path").innerHTML = startContent + ": " + s.toTimeString().substring(0,5) + " – " + endContent + ": " + eWithPauses.toTimeString().substring(0,5);
-
-                // tick, tock, tick, tock, ...
-                let remaining = Math.max(eWithPauses.getTime() - (new Date()).getTime(), 0);
-                let remainingDeg = remaining / (duration * 60 * 1000) * 360;
-
-                if (!paused && remaining > 0) {
-                    document.getElementById("timer").style.opacity = 1.0;
-                } else {
-                    document.getElementById("timer").style.opacity = 0.5;
-                }
-
-                document.getElementById("spinner").setAttribute("d", describeArc(spinnerX, spinnerY, spinnerRadius, 360 - remainingDeg, 360));
-                document.getElementById("spinner-background").setAttribute("d", describeArc(spinnerX, spinnerY, spinnerRadius, 0, 359.999));
-                document.getElementById("remaining").innerHTML = Math.ceil(remaining / (60 * 1000)) + remainingLabel;
-            }
-
-            // show and hide instructions depending on state
-            let state;
-            if (!started) {
-                state = "before";
-            } else {
-                var remaining = Math.max(eWithPauses.getTime() - (new Date()).getTime(), 0);
-                if (remaining > 1 * 60 * 1000) {
-                    state = "during";
-                } else if (remaining > 0) {
-                    state = "homestretch";
-                } else {
-                    state = "after";
-                }
-            }
-            let otherStates = ["before", "during", "homestretch", "after"];
-            otherStates.splice(otherStates.indexOf(state), 1);
-
-            // inactive states
-            for (o in otherStates) {
-                let elements = document.getElementsByClassName(otherStates[o]);
-                for (let i = 0; i < elements.length; i++) {
-                    elements[i].style.display = "none";
-                }
-            }
-
-            // active states
-            let elements = document.getElementsByClassName(state);
-            for (let i = 0; i < elements.length; i++) {
-                elements[i].style.display = "block";
-            }
-        }, 100);
-    </script>
-  </body>
-</html>    
+      <<TEXTO DE LA ESFERA>>
+      </script>
+      <<definición de estilo>>
+    </head>
+    <body>
+      <<INFORMACIÓN GENERAL>>
+      <<sección temporizador>>
+      <<script funcionamiento>>
+    </body>
+  </html>    
 #+END_SRC
+
+

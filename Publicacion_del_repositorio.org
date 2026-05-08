@@ -50,7 +50,7 @@ El siguiente script de elisp publica el fichero [[file:index.org][=index.org=]] 
          :with-author t
          :with-creator nil
          :with-toc t
-	 :exclude "README.org\\|examtimer.org"
+	 :exclude "README.org\\|examtimer.org\\|Publicacion_del_repositorio.org"
 	 :section-numbers nil)
 	))
 
