@@ -1,6 +1,102 @@
-#+TITLE: Código fuente de los ficheros =html=
+#+TITLE: Código fuente de los temporizadores de examen
+
+Este archivo contiene el código fuente literate programming (orgmode) que genera
+los temporizadores HTML mediante noweb tangling. Los temporizadores se organizan
+por tipo (genérico, por asignatura) y duración.
 
 * Genérico
+
+** 15 minutos
+
+#+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-15.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 15 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+** 20 minutos
+
+#+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-20.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 20 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+** 30 minutos
+
+#+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-30.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 30 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+** 45 minutos
+
+#+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-45.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 45 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
 
 ** 1 hora
 
@@ -15,7 +111,6 @@
       
     <<definición de estilo>>
   </head>
-  
   <body>
     
     <<INFORMACIÓN GENERAL>>
@@ -26,7 +121,28 @@
 </html>    
 #+END_SRC
 
+** 1 hora y cuarto
 
+#+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-75.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 75 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
 
 ** 1 hora y media
 
@@ -61,6 +177,29 @@
     <title>Temporizador</title>
 
     <<DURACIÓN 105 Y TEXTO DE LA ESFERA>>
+      
+    <<definición de estilo>>
+  </head>
+  <body>
+    
+    <<INFORMACIÓN GENERAL>>
+
+    <<sección temporizador>>
+    <<script funcionamiento>>
+  </body>
+</html>    
+#+END_SRC
+
+** 1 hora y 50 minutos
+
+#+BEGIN_SRC html :tangle docs/temporizadores/Temporizador-110.html :noweb yes
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temporizador</title>
+
+    <<DURACIÓN 110 Y TEXTO DE LA ESFERA>>
       
     <<definición de estilo>>
   </head>
@@ -119,7 +258,6 @@
   </body>
 </html>    
 #+END_SRC
-
 
 ** 2 horas y media
 
@@ -388,6 +526,15 @@
 ** Duración de examen
 
 
+#+name: DURACIÓN 15 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 15;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
 #+name: DURACIÓN 20 Y TEXTO DE LA ESFERA
 #+BEGIN_SRC html :noweb yes
 <script>
@@ -424,6 +571,15 @@
 #+END_SRC
 
 
+#+name: DURACIÓN 75 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 75;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
 #+name: DURACIÓN 90 Y TEXTO DE LA ESFERA
 #+BEGIN_SRC html :noweb yes
 <script>
@@ -436,6 +592,14 @@
 #+BEGIN_SRC html :noweb yes
 <script>
     var duration = 105;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+#+name: DURACIÓN 110 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 110;
     <<TEXTO DE LA ESFERA>>
 </script>
 #+END_SRC
@@ -473,16 +637,11 @@ var startContent = "START";
 var endContent = "END";
 #+END_SRC
 
-#+name: DURACIÓN 2 Y TEXTO DE LA ESFERA
-#+BEGIN_SRC html :noweb yes
-<script>
-    var duration = 2;
-    <<TEXTO DE LA ESFERA>>
-</script>
-#+END_SRC
-
 
 * Partes de código común a todos los temporizadores
+
+Estos bloques de código noweb se reutilizan en todos los temporizadores mediante
+la sintaxis <<nombre-bloque>>.
 
 #+name: definición de estilo
 #+BEGIN_SRC html
@@ -819,6 +978,15 @@ El =15= de la línea =if (remaining > 15 * 60 * 1000) {= indica cuántos son los
 #+END_SRC
 
 
+#+name: DURACIÓN 2 Y TEXTO DE LA ESFERA
+#+BEGIN_SRC html :noweb yes
+<script>
+    var duration = 2;
+    <<TEXTO DE LA ESFERA>>
+</script>
+#+END_SRC
+
+
 * Versión DEMO del temporizador genérico
 
 Temporizador con una duración de 2 minutos. Durante el último minuto se muestran las instrucciones correspondientes a los últimos momentos antes de finalizar el examen (es lo que se ve en los últimos 15 minutos de los demás exámenes).
@@ -1093,5 +1261,3 @@ Temporizador con una duración de 2 minutos. Durante el último minuto se muestr
   </body>
 </html>    
 #+END_SRC
-
-
